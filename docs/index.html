@@ -7131,7 +7131,7 @@ This release:
 									data-target="#bengali .issuescard"
 								>
 									<span class="material-icons"></span>
-									Known Issues (8)
+									Known Issues (5)
 								</button>
 							</h5>
 						</div>
@@ -7139,11 +7139,8 @@ This release:
 							<div class="card-body">
 								<ul>
 									<li>UI font has regressions (<a href="https://github.com/notofonts/bengali/issues/22">#22</a>)</li>
-									<li>TA(U+09A4)+TA+RA &quot;TTRA&quot; in NotoSansBengali does not appear correctly  (<a href="https://github.com/notofonts/bengali/issues/21">#21</a>)</li>
 									<li>Half forms are not to be used in Bengali (<a href="https://github.com/notofonts/bengali/issues/10">#10</a>)</li>
-									<li>TTRA in NotoSansBengali does not appear correctly (<a href="https://github.com/notofonts/bengali/issues/6">#6</a>)</li>
-									<li>Notosans Bengali has interchanged two ligatures হ্ণ হ্ন (<a href="https://github.com/notofonts/bengali/issues/5">#5</a>)</li>
-									<li>Subjoined Bengali ba + nukta looks like subjoined ra (<a href="https://github.com/notofonts/bengali/issues/3">#3</a>)</li>
+									<li>TTA-RA conjunct needs redrawing (<a href="https://github.com/notofonts/bengali/issues/6">#6</a>)</li>
 									<li>Noto Sans Tirhuta and Noto Sans Bengali fonts need knots (<a href="https://github.com/notofonts/bengali/issues/2">#2</a>)</li>
 									<li>Characters needed in Bengali font (<a href="https://github.com/notofonts/bengali/issues/1">#1</a>)</li>
 								</ul>
@@ -13084,17 +13081,14 @@ This release fixes a number of fontbakery fails.
 									data-target="#devanagari .issuescard"
 								>
 									<span class="material-icons"></span>
-									Known Issues (8)
+									Known Issues (5)
 								</button>
 							</h5>
 						</div>
 						<div class="collapse issuescard">
 							<div class="card-body">
 								<ul>
-									<li>UI font has regressions (<a href="https://github.com/notofonts/devanagari/issues/33">#33</a>)</li>
-									<li>Noto Devanagari : Incorrect rendering of रॢ &amp; रॣ (<a href="https://github.com/notofonts/devanagari/issues/32">#32</a>)</li>
 									<li>Representation of geminate Devanagari letter NA in Noto Serif Devanagari (<a href="https://github.com/notofonts/devanagari/issues/13">#13</a>)</li>
-									<li>A certain sAmaveda accent clash (<a href="https://github.com/notofonts/devanagari/issues/10">#10</a>)</li>
 									<li>Add ligature for श्न (śna) in Devanagari Serif (<a href="https://github.com/notofonts/devanagari/issues/7">#7</a>)</li>
 									<li>Jihvamuliya and upadhmaniya do not stack in Devanagari (<a href="https://github.com/notofonts/devanagari/issues/4">#4</a>)</li>
 									<li>Devanagari: vowels over the hanging line+candrabindu intersect in document fonts (<a href="https://github.com/notofonts/devanagari/issues/3">#3</a>)</li>
@@ -86806,40 +86800,49 @@ This release fixes a number of fontbakery fails.
 							<div class="card-body">
 								<h6>
 									Noto Sans Telugu
-									<a href="https://github.com/notofonts/telugu/releases/tag/NotoSansTelugu-v2.003"
-										>v2.003</a
+									<a href="https://github.com/notofonts/telugu/releases/tag/NotoSansTelugu-v2.004"
+										>v2.004</a
 									>
 									<span class="ml-5 font-weight-normal">
 										<span class="material-icons" data-toggle="tooltip" title="Android 12"> android </span> <span class="up-to-date-false">2.001</span>
 
 										<img data-toggle="tooltip" title="Fedora 38" src="fedora.png" width=18 height=18></img> <span class="up-to-date-false">2.002</span>
 
-										<img data-toggle="tooltip" title="Google Fonts" src="gflogo.png" width=18 height=18></img> <span class="up-to-date-true">2.003</span>
+										<img data-toggle="tooltip" title="Google Fonts" src="gflogo.png" width=18 height=18></img> <span class="up-to-date-false">2.003</span>
 									</span>
 
 								</h6>
-								<pre>Noto Sans Telugu v2.003
+								<pre>Noto Sans Telugu v2.004
 
-This is an administrative release
+This release:
+* Improves the anchoring of top marks (#3)
+* Improves the display of subscripts ending in -tra (#12)
+* Fixes a regression where subscript -ra was clashing (#13)
+* Allows for the formation of the -jnya ligature (#8)
+* Fixes a number of spacing regressions (#13)
+* Fixes a number of issues in the UI build (#9)
+* Fixes mark categories, allowing for vedic marks on bases with postbase glyphs (#10)
 </pre>
 								
 								<h6>
 									Noto Serif Telugu
-									<a href="https://github.com/notofonts/telugu/releases/tag/NotoSerifTelugu-v2.003"
-										>v2.003</a
+									<a href="https://github.com/notofonts/telugu/releases/tag/NotoSerifTelugu-v2.004"
+										>v2.004</a
 									>
 									<span class="ml-5 font-weight-normal">
 										<span class="material-icons" data-toggle="tooltip" title="Android 12"> android </span> <span class="up-to-date-false">2.001</span>
 
 										<img data-toggle="tooltip" title="Fedora 38" src="fedora.png" width=18 height=18></img> <span class="up-to-date-false">2.002</span>
 
-										<img data-toggle="tooltip" title="Google Fonts" src="gflogo.png" width=18 height=18></img> <span class="up-to-date-true">2.003</span>
+										<img data-toggle="tooltip" title="Google Fonts" src="gflogo.png" width=18 height=18></img> <span class="up-to-date-false">2.003</span>
 									</span>
 
 								</h6>
-								<pre>Noto Serif Telugu v2.003
+								<pre>Noto Serif Telugu v2.004
 
-This is an administrative release
+This release:
+* improves the display of -tra conjuncts (#12)
+* allows for the formation of -jnya conjuncts (#8)
 </pre>
 								
 							</div>
@@ -86874,1022 +86877,1029 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-Black.otf"
 													>NotoSansTelugu-Black.otf</a
-												> <span class="text-nowrap">(107.0 kB)</span>
+												> <span class="text-nowrap">(112.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-Bold.otf"
 													>NotoSansTelugu-Bold.otf</a
-												> <span class="text-nowrap">(109.5 kB)</span>
+												> <span class="text-nowrap">(114.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-Condensed.otf"
 													>NotoSansTelugu-Condensed.otf</a
-												> <span class="text-nowrap">(114.8 kB)</span>
+												> <span class="text-nowrap">(120.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-CondensedBlack.otf"
 													>NotoSansTelugu-CondensedBlack.otf</a
-												> <span class="text-nowrap">(119.5 kB)</span>
+												> <span class="text-nowrap">(124.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-CondensedBold.otf"
 													>NotoSansTelugu-CondensedBold.otf</a
-												> <span class="text-nowrap">(126.6 kB)</span>
+												> <span class="text-nowrap">(131.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-CondensedExtraBold.otf"
 													>NotoSansTelugu-CondensedExtraBold.otf</a
-												> <span class="text-nowrap">(125.0 kB)</span>
+												> <span class="text-nowrap">(130.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-CondensedExtraLight.otf"
 													>NotoSansTelugu-CondensedExtraLight.otf</a
-												> <span class="text-nowrap">(116.2 kB)</span>
+												> <span class="text-nowrap">(121.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-CondensedLight.otf"
 													>NotoSansTelugu-CondensedLight.otf</a
-												> <span class="text-nowrap">(118.0 kB)</span>
+												> <span class="text-nowrap">(123.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-CondensedMedium.otf"
 													>NotoSansTelugu-CondensedMedium.otf</a
-												> <span class="text-nowrap">(122.8 kB)</span>
+												> <span class="text-nowrap">(128.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-CondensedSemiBold.otf"
 													>NotoSansTelugu-CondensedSemiBold.otf</a
-												> <span class="text-nowrap">(124.7 kB)</span>
+												> <span class="text-nowrap">(129.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-CondensedThin.otf"
 													>NotoSansTelugu-CondensedThin.otf</a
-												> <span class="text-nowrap">(111.4 kB)</span>
+												> <span class="text-nowrap">(116.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraBold.otf"
 													>NotoSansTelugu-ExtraBold.otf</a
-												> <span class="text-nowrap">(122.9 kB)</span>
+												> <span class="text-nowrap">(128.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensed.otf"
 													>NotoSansTelugu-ExtraCondensed.otf</a
-												> <span class="text-nowrap">(100.1 kB)</span>
+												> <span class="text-nowrap">(105.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensedBlack.otf"
 													>NotoSansTelugu-ExtraCondensedBlack.otf</a
-												> <span class="text-nowrap">(107.0 kB)</span>
+												> <span class="text-nowrap">(112.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensedBold.otf"
 													>NotoSansTelugu-ExtraCondensedBold.otf</a
-												> <span class="text-nowrap">(125.7 kB)</span>
+												> <span class="text-nowrap">(131.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensedExtraBold.otf"
 													>NotoSansTelugu-ExtraCondensedExtraBold.otf</a
-												> <span class="text-nowrap">(126.5 kB)</span>
+												> <span class="text-nowrap">(131.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensedExtraLight.otf"
 													>NotoSansTelugu-ExtraCondensedExtraLight.otf</a
-												> <span class="text-nowrap">(113.6 kB)</span>
+												> <span class="text-nowrap">(118.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensedLight.otf"
 													>NotoSansTelugu-ExtraCondensedLight.otf</a
-												> <span class="text-nowrap">(113.1 kB)</span>
+												> <span class="text-nowrap">(118.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensedMedium.otf"
 													>NotoSansTelugu-ExtraCondensedMedium.otf</a
-												> <span class="text-nowrap">(122.3 kB)</span>
+												> <span class="text-nowrap">(127.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensedSemiBold.otf"
 													>NotoSansTelugu-ExtraCondensedSemiBold.otf</a
-												> <span class="text-nowrap">(124.3 kB)</span>
+												> <span class="text-nowrap">(129.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraCondensedThin.otf"
 													>NotoSansTelugu-ExtraCondensedThin.otf</a
-												> <span class="text-nowrap">(98.5 kB)</span>
+												> <span class="text-nowrap">(103.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-ExtraLight.otf"
 													>NotoSansTelugu-ExtraLight.otf</a
-												> <span class="text-nowrap">(114.5 kB)</span>
+												> <span class="text-nowrap">(119.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-Light.otf"
 													>NotoSansTelugu-Light.otf</a
-												> <span class="text-nowrap">(113.9 kB)</span>
+												> <span class="text-nowrap">(119.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-Medium.otf"
 													>NotoSansTelugu-Medium.otf</a
-												> <span class="text-nowrap">(120.4 kB)</span>
+												> <span class="text-nowrap">(125.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-Regular.otf"
 													>NotoSansTelugu-Regular.otf</a
-												> <span class="text-nowrap">(103.2 kB)</span>
+												> <span class="text-nowrap">(108.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiBold.otf"
 													>NotoSansTelugu-SemiBold.otf</a
-												> <span class="text-nowrap">(121.4 kB)</span>
+												> <span class="text-nowrap">(126.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensed.otf"
 													>NotoSansTelugu-SemiCondensed.otf</a
-												> <span class="text-nowrap">(114.1 kB)</span>
+												> <span class="text-nowrap">(119.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensedBlack.otf"
 													>NotoSansTelugu-SemiCondensedBlack.otf</a
-												> <span class="text-nowrap">(119.7 kB)</span>
+												> <span class="text-nowrap">(125.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensedBold.otf"
 													>NotoSansTelugu-SemiCondensedBold.otf</a
-												> <span class="text-nowrap">(126.0 kB)</span>
+												> <span class="text-nowrap">(131.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensedExtraBold.otf"
 													>NotoSansTelugu-SemiCondensedExtraBold.otf</a
-												> <span class="text-nowrap">(126.3 kB)</span>
+												> <span class="text-nowrap">(131.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensedExtraLight.otf"
 													>NotoSansTelugu-SemiCondensedExtraLight.otf</a
-												> <span class="text-nowrap">(116.2 kB)</span>
+												> <span class="text-nowrap">(121.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensedLight.otf"
 													>NotoSansTelugu-SemiCondensedLight.otf</a
-												> <span class="text-nowrap">(118.5 kB)</span>
+												> <span class="text-nowrap">(123.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensedMedium.otf"
 													>NotoSansTelugu-SemiCondensedMedium.otf</a
-												> <span class="text-nowrap">(121.9 kB)</span>
+												> <span class="text-nowrap">(127.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensedSemiBold.otf"
 													>NotoSansTelugu-SemiCondensedSemiBold.otf</a
-												> <span class="text-nowrap">(124.1 kB)</span>
+												> <span class="text-nowrap">(129.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-SemiCondensedThin.otf"
 													>NotoSansTelugu-SemiCondensedThin.otf</a
-												> <span class="text-nowrap">(111.2 kB)</span>
+												> <span class="text-nowrap">(116.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTelugu-Thin.otf"
 													>NotoSansTelugu-Thin.otf</a
-												> <span class="text-nowrap">(99.1 kB)</span>
+												> <span class="text-nowrap">(104.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-Black.otf"
 													>NotoSansTeluguUI-Black.otf</a
-												> <span class="text-nowrap">(107.7 kB)</span>
+												> <span class="text-nowrap">(114.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-Bold.otf"
 													>NotoSansTeluguUI-Bold.otf</a
-												> <span class="text-nowrap">(109.6 kB)</span>
+												> <span class="text-nowrap">(115.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-Condensed.otf"
 													>NotoSansTeluguUI-Condensed.otf</a
-												> <span class="text-nowrap">(103.0 kB)</span>
+												> <span class="text-nowrap">(104.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-CondensedBlack.otf"
 													>NotoSansTeluguUI-CondensedBlack.otf</a
-												> <span class="text-nowrap">(106.8 kB)</span>
+												> <span class="text-nowrap">(108.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-CondensedBold.otf"
 													>NotoSansTeluguUI-CondensedBold.otf</a
-												> <span class="text-nowrap">(113.7 kB)</span>
+												> <span class="text-nowrap">(114.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-CondensedExtraBold.otf"
 													>NotoSansTeluguUI-CondensedExtraBold.otf</a
-												> <span class="text-nowrap">(111.6 kB)</span>
+												> <span class="text-nowrap">(112.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-CondensedExtraLight.otf"
 													>NotoSansTeluguUI-CondensedExtraLight.otf</a
-												> <span class="text-nowrap">(116.3 kB)</span>
+												> <span class="text-nowrap">(122.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-CondensedLight.otf"
 													>NotoSansTeluguUI-CondensedLight.otf</a
-												> <span class="text-nowrap">(118.5 kB)</span>
+												> <span class="text-nowrap">(124.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-CondensedMedium.otf"
 													>NotoSansTeluguUI-CondensedMedium.otf</a
-												> <span class="text-nowrap">(109.8 kB)</span>
+												> <span class="text-nowrap">(110.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-CondensedSemiBold.otf"
 													>NotoSansTeluguUI-CondensedSemiBold.otf</a
-												> <span class="text-nowrap">(111.3 kB)</span>
+												> <span class="text-nowrap">(112.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-CondensedThin.otf"
 													>NotoSansTeluguUI-CondensedThin.otf</a
-												> <span class="text-nowrap">(110.9 kB)</span>
+												> <span class="text-nowrap">(117.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraBold.otf"
 													>NotoSansTeluguUI-ExtraBold.otf</a
-												> <span class="text-nowrap">(123.4 kB)</span>
+												> <span class="text-nowrap">(129.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensed.otf"
 													>NotoSansTeluguUI-ExtraCondensed.otf</a
-												> <span class="text-nowrap">(90.2 kB)</span>
+												> <span class="text-nowrap">(91.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensedBlack.otf"
 													>NotoSansTeluguUI-ExtraCondensedBlack.otf</a
-												> <span class="text-nowrap">(95.6 kB)</span>
+												> <span class="text-nowrap">(97.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensedBold.otf"
 													>NotoSansTeluguUI-ExtraCondensedBold.otf</a
-												> <span class="text-nowrap">(112.6 kB)</span>
+												> <span class="text-nowrap">(113.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensedExtraBold.otf"
 													>NotoSansTeluguUI-ExtraCondensedExtraBold.otf</a
-												> <span class="text-nowrap">(113.2 kB)</span>
+												> <span class="text-nowrap">(114.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensedExtraLight.otf"
 													>NotoSansTeluguUI-ExtraCondensedExtraLight.otf</a
-												> <span class="text-nowrap">(102.6 kB)</span>
+												> <span class="text-nowrap">(103.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensedLight.otf"
 													>NotoSansTeluguUI-ExtraCondensedLight.otf</a
-												> <span class="text-nowrap">(101.8 kB)</span>
+												> <span class="text-nowrap">(102.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensedMedium.otf"
 													>NotoSansTeluguUI-ExtraCondensedMedium.otf</a
-												> <span class="text-nowrap">(109.3 kB)</span>
+												> <span class="text-nowrap">(110.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensedSemiBold.otf"
 													>NotoSansTeluguUI-ExtraCondensedSemiBold.otf</a
-												> <span class="text-nowrap">(110.9 kB)</span>
+												> <span class="text-nowrap">(112.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraCondensedThin.otf"
 													>NotoSansTeluguUI-ExtraCondensedThin.otf</a
-												> <span class="text-nowrap">(89.7 kB)</span>
+												> <span class="text-nowrap">(92.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-ExtraLight.otf"
 													>NotoSansTeluguUI-ExtraLight.otf</a
-												> <span class="text-nowrap">(114.5 kB)</span>
+												> <span class="text-nowrap">(120.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-Light.otf"
 													>NotoSansTeluguUI-Light.otf</a
-												> <span class="text-nowrap">(113.8 kB)</span>
+												> <span class="text-nowrap">(120.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-Medium.otf"
 													>NotoSansTeluguUI-Medium.otf</a
-												> <span class="text-nowrap">(119.5 kB)</span>
+												> <span class="text-nowrap">(125.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-Regular.otf"
 													>NotoSansTeluguUI-Regular.otf</a
-												> <span class="text-nowrap">(103.6 kB)</span>
+												> <span class="text-nowrap">(109.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiBold.otf"
 													>NotoSansTeluguUI-SemiBold.otf</a
-												> <span class="text-nowrap">(121.4 kB)</span>
+												> <span class="text-nowrap">(127.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensed.otf"
 													>NotoSansTeluguUI-SemiCondensed.otf</a
-												> <span class="text-nowrap">(113.9 kB)</span>
+												> <span class="text-nowrap">(120.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensedBlack.otf"
 													>NotoSansTeluguUI-SemiCondensedBlack.otf</a
-												> <span class="text-nowrap">(119.6 kB)</span>
+												> <span class="text-nowrap">(126.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensedBold.otf"
 													>NotoSansTeluguUI-SemiCondensedBold.otf</a
-												> <span class="text-nowrap">(126.2 kB)</span>
+												> <span class="text-nowrap">(132.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensedExtraBold.otf"
 													>NotoSansTeluguUI-SemiCondensedExtraBold.otf</a
-												> <span class="text-nowrap">(126.8 kB)</span>
+												> <span class="text-nowrap">(133.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensedExtraLight.otf"
 													>NotoSansTeluguUI-SemiCondensedExtraLight.otf</a
-												> <span class="text-nowrap">(117.1 kB)</span>
+												> <span class="text-nowrap">(123.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensedLight.otf"
 													>NotoSansTeluguUI-SemiCondensedLight.otf</a
-												> <span class="text-nowrap">(118.7 kB)</span>
+												> <span class="text-nowrap">(125.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensedMedium.otf"
 													>NotoSansTeluguUI-SemiCondensedMedium.otf</a
-												> <span class="text-nowrap">(122.6 kB)</span>
+												> <span class="text-nowrap">(128.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensedSemiBold.otf"
 													>NotoSansTeluguUI-SemiCondensedSemiBold.otf</a
-												> <span class="text-nowrap">(124.5 kB)</span>
+												> <span class="text-nowrap">(130.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-SemiCondensedThin.otf"
 													>NotoSansTeluguUI-SemiCondensedThin.otf</a
-												> <span class="text-nowrap">(111.9 kB)</span>
+												> <span class="text-nowrap">(118.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/otf/NotoSansTeluguUI-Thin.otf"
 													>NotoSansTeluguUI-Thin.otf</a
-												> <span class="text-nowrap">(101.1 kB)</span>
+												> <span class="text-nowrap">(107.3 kB)</span>
 												
+											</li>
+											<li class="text-nowrap">
+												<a
+													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/slim-variable-ttf/NotoSansTelugu-UI-VF.ttf"
+													>NotoSansTelugu-UI-VF.ttf</a
+												> <span class="text-nowrap">(220.8 kB)</span>
+												<span class="badge badge-pill badge-info">Slim VF<i class="material-icons" data-toggle="tooltip" data-placement="right" title="Slim variable fonts contain a limited subset of the variable font's design space, covering only weights from Regular to Bold, and Regular width. They can be used where expression is required but disk space is at a premium.">help</i></span></h6> 
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/slim-variable-ttf/NotoSansTelugu[wght].ttf"
 													>NotoSansTelugu[wght].ttf</a
-												> <span class="text-nowrap">(671.1 kB)</span>
+												> <span class="text-nowrap">(233.6 kB)</span>
 												<span class="badge badge-pill badge-info">Slim VF<i class="material-icons" data-toggle="tooltip" data-placement="right" title="Slim variable fonts contain a limited subset of the variable font's design space, covering only weights from Regular to Bold, and Regular width. They can be used where expression is required but disk space is at a premium.">help</i></span></h6> 
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-Black.ttf"
 													>NotoSansTelugu-Black.ttf</a
-												> <span class="text-nowrap">(157.1 kB)</span>
+												> <span class="text-nowrap">(162.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-Bold.ttf"
 													>NotoSansTelugu-Bold.ttf</a
-												> <span class="text-nowrap">(159.9 kB)</span>
+												> <span class="text-nowrap">(165.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-Condensed.ttf"
 													>NotoSansTelugu-Condensed.ttf</a
-												> <span class="text-nowrap">(157.5 kB)</span>
+												> <span class="text-nowrap">(162.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-CondensedBlack.ttf"
 													>NotoSansTelugu-CondensedBlack.ttf</a
-												> <span class="text-nowrap">(153.9 kB)</span>
+												> <span class="text-nowrap">(159.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-CondensedBold.ttf"
 													>NotoSansTelugu-CondensedBold.ttf</a
-												> <span class="text-nowrap">(158.1 kB)</span>
+												> <span class="text-nowrap">(163.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-CondensedExtraBold.ttf"
 													>NotoSansTelugu-CondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(155.7 kB)</span>
+												> <span class="text-nowrap">(161.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-CondensedExtraLight.ttf"
 													>NotoSansTelugu-CondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(156.9 kB)</span>
+												> <span class="text-nowrap">(162.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-CondensedLight.ttf"
 													>NotoSansTelugu-CondensedLight.ttf</a
-												> <span class="text-nowrap">(156.9 kB)</span>
+												> <span class="text-nowrap">(162.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-CondensedMedium.ttf"
 													>NotoSansTelugu-CondensedMedium.ttf</a
-												> <span class="text-nowrap">(157.1 kB)</span>
+												> <span class="text-nowrap">(162.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-CondensedSemiBold.ttf"
 													>NotoSansTelugu-CondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(157.5 kB)</span>
+												> <span class="text-nowrap">(162.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-CondensedThin.ttf"
 													>NotoSansTelugu-CondensedThin.ttf</a
-												> <span class="text-nowrap">(158.2 kB)</span>
+												> <span class="text-nowrap">(163.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraBold.ttf"
 													>NotoSansTelugu-ExtraBold.ttf</a
-												> <span class="text-nowrap">(157.9 kB)</span>
+												> <span class="text-nowrap">(163.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensed.ttf"
 													>NotoSansTelugu-ExtraCondensed.ttf</a
-												> <span class="text-nowrap">(156.1 kB)</span>
+												> <span class="text-nowrap">(161.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensedBlack.ttf"
 													>NotoSansTelugu-ExtraCondensedBlack.ttf</a
-												> <span class="text-nowrap">(153.1 kB)</span>
+												> <span class="text-nowrap">(158.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensedBold.ttf"
 													>NotoSansTelugu-ExtraCondensedBold.ttf</a
-												> <span class="text-nowrap">(158.1 kB)</span>
+												> <span class="text-nowrap">(163.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensedExtraBold.ttf"
 													>NotoSansTelugu-ExtraCondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(155.5 kB)</span>
+												> <span class="text-nowrap">(160.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensedExtraLight.ttf"
 													>NotoSansTelugu-ExtraCondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(157.6 kB)</span>
+												> <span class="text-nowrap">(162.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensedLight.ttf"
 													>NotoSansTelugu-ExtraCondensedLight.ttf</a
-												> <span class="text-nowrap">(157.2 kB)</span>
+												> <span class="text-nowrap">(162.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensedMedium.ttf"
 													>NotoSansTelugu-ExtraCondensedMedium.ttf</a
-												> <span class="text-nowrap">(156.4 kB)</span>
+												> <span class="text-nowrap">(161.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensedSemiBold.ttf"
 													>NotoSansTelugu-ExtraCondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(157.0 kB)</span>
+												> <span class="text-nowrap">(162.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraCondensedThin.ttf"
 													>NotoSansTelugu-ExtraCondensedThin.ttf</a
-												> <span class="text-nowrap">(158.7 kB)</span>
+												> <span class="text-nowrap">(163.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-ExtraLight.ttf"
 													>NotoSansTelugu-ExtraLight.ttf</a
-												> <span class="text-nowrap">(160.0 kB)</span>
+												> <span class="text-nowrap">(165.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-Light.ttf"
 													>NotoSansTelugu-Light.ttf</a
-												> <span class="text-nowrap">(160.0 kB)</span>
+												> <span class="text-nowrap">(165.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-Medium.ttf"
 													>NotoSansTelugu-Medium.ttf</a
-												> <span class="text-nowrap">(160.0 kB)</span>
+												> <span class="text-nowrap">(165.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-Regular.ttf"
 													>NotoSansTelugu-Regular.ttf</a
-												> <span class="text-nowrap">(159.6 kB)</span>
+												> <span class="text-nowrap">(164.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiBold.ttf"
 													>NotoSansTelugu-SemiBold.ttf</a
-												> <span class="text-nowrap">(159.7 kB)</span>
+												> <span class="text-nowrap">(164.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensed.ttf"
 													>NotoSansTelugu-SemiCondensed.ttf</a
-												> <span class="text-nowrap">(158.6 kB)</span>
+												> <span class="text-nowrap">(163.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensedBlack.ttf"
 													>NotoSansTelugu-SemiCondensedBlack.ttf</a
-												> <span class="text-nowrap">(155.2 kB)</span>
+												> <span class="text-nowrap">(160.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensedBold.ttf"
 													>NotoSansTelugu-SemiCondensedBold.ttf</a
-												> <span class="text-nowrap">(158.9 kB)</span>
+												> <span class="text-nowrap">(164.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensedExtraBold.ttf"
 													>NotoSansTelugu-SemiCondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(156.1 kB)</span>
+												> <span class="text-nowrap">(161.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensedExtraLight.ttf"
 													>NotoSansTelugu-SemiCondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(158.3 kB)</span>
+												> <span class="text-nowrap">(163.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensedLight.ttf"
 													>NotoSansTelugu-SemiCondensedLight.ttf</a
-												> <span class="text-nowrap">(158.0 kB)</span>
+												> <span class="text-nowrap">(163.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensedMedium.ttf"
 													>NotoSansTelugu-SemiCondensedMedium.ttf</a
-												> <span class="text-nowrap">(157.8 kB)</span>
+												> <span class="text-nowrap">(162.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensedSemiBold.ttf"
 													>NotoSansTelugu-SemiCondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(158.0 kB)</span>
+												> <span class="text-nowrap">(163.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-SemiCondensedThin.ttf"
 													>NotoSansTelugu-SemiCondensedThin.ttf</a
-												> <span class="text-nowrap">(158.3 kB)</span>
+												> <span class="text-nowrap">(163.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTelugu-Thin.ttf"
 													>NotoSansTelugu-Thin.ttf</a
-												> <span class="text-nowrap">(160.6 kB)</span>
+												> <span class="text-nowrap">(165.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-Black.ttf"
 													>NotoSansTeluguUI-Black.ttf</a
-												> <span class="text-nowrap">(157.2 kB)</span>
+												> <span class="text-nowrap">(163.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-Bold.ttf"
 													>NotoSansTeluguUI-Bold.ttf</a
-												> <span class="text-nowrap">(160.0 kB)</span>
+												> <span class="text-nowrap">(166.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-Condensed.ttf"
 													>NotoSansTeluguUI-Condensed.ttf</a
-												> <span class="text-nowrap">(144.3 kB)</span>
+												> <span class="text-nowrap">(145.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-CondensedBlack.ttf"
 													>NotoSansTeluguUI-CondensedBlack.ttf</a
-												> <span class="text-nowrap">(140.9 kB)</span>
+												> <span class="text-nowrap">(142.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-CondensedBold.ttf"
 													>NotoSansTeluguUI-CondensedBold.ttf</a
-												> <span class="text-nowrap">(144.7 kB)</span>
+												> <span class="text-nowrap">(146.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-CondensedExtraBold.ttf"
 													>NotoSansTeluguUI-CondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(142.6 kB)</span>
+												> <span class="text-nowrap">(144.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-CondensedExtraLight.ttf"
 													>NotoSansTeluguUI-CondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(157.0 kB)</span>
+												> <span class="text-nowrap">(163.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-CondensedLight.ttf"
 													>NotoSansTeluguUI-CondensedLight.ttf</a
-												> <span class="text-nowrap">(156.9 kB)</span>
+												> <span class="text-nowrap">(163.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-CondensedMedium.ttf"
 													>NotoSansTeluguUI-CondensedMedium.ttf</a
-												> <span class="text-nowrap">(143.9 kB)</span>
+												> <span class="text-nowrap">(145.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-CondensedSemiBold.ttf"
 													>NotoSansTeluguUI-CondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(144.3 kB)</span>
+												> <span class="text-nowrap">(145.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-CondensedThin.ttf"
 													>NotoSansTeluguUI-CondensedThin.ttf</a
-												> <span class="text-nowrap">(158.3 kB)</span>
+												> <span class="text-nowrap">(164.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraBold.ttf"
 													>NotoSansTeluguUI-ExtraBold.ttf</a
-												> <span class="text-nowrap">(157.9 kB)</span>
+												> <span class="text-nowrap">(164.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensed.ttf"
 													>NotoSansTeluguUI-ExtraCondensed.ttf</a
-												> <span class="text-nowrap">(143.0 kB)</span>
+												> <span class="text-nowrap">(144.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensedBlack.ttf"
 													>NotoSansTeluguUI-ExtraCondensedBlack.ttf</a
-												> <span class="text-nowrap">(140.2 kB)</span>
+												> <span class="text-nowrap">(141.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensedBold.ttf"
 													>NotoSansTeluguUI-ExtraCondensedBold.ttf</a
-												> <span class="text-nowrap">(144.8 kB)</span>
+												> <span class="text-nowrap">(146.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensedExtraBold.ttf"
 													>NotoSansTeluguUI-ExtraCondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(142.5 kB)</span>
+												> <span class="text-nowrap">(144.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensedExtraLight.ttf"
 													>NotoSansTeluguUI-ExtraCondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(144.4 kB)</span>
+												> <span class="text-nowrap">(146.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensedLight.ttf"
 													>NotoSansTeluguUI-ExtraCondensedLight.ttf</a
-												> <span class="text-nowrap">(143.9 kB)</span>
+												> <span class="text-nowrap">(145.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensedMedium.ttf"
 													>NotoSansTeluguUI-ExtraCondensedMedium.ttf</a
-												> <span class="text-nowrap">(143.2 kB)</span>
+												> <span class="text-nowrap">(144.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensedSemiBold.ttf"
 													>NotoSansTeluguUI-ExtraCondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(143.8 kB)</span>
+												> <span class="text-nowrap">(145.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraCondensedThin.ttf"
 													>NotoSansTeluguUI-ExtraCondensedThin.ttf</a
-												> <span class="text-nowrap">(145.3 kB)</span>
+												> <span class="text-nowrap">(146.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-ExtraLight.ttf"
 													>NotoSansTeluguUI-ExtraLight.ttf</a
-												> <span class="text-nowrap">(160.1 kB)</span>
+												> <span class="text-nowrap">(166.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-Light.ttf"
 													>NotoSansTeluguUI-Light.ttf</a
-												> <span class="text-nowrap">(160.1 kB)</span>
+												> <span class="text-nowrap">(166.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-Medium.ttf"
 													>NotoSansTeluguUI-Medium.ttf</a
-												> <span class="text-nowrap">(160.1 kB)</span>
+												> <span class="text-nowrap">(166.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-Regular.ttf"
 													>NotoSansTeluguUI-Regular.ttf</a
-												> <span class="text-nowrap">(159.7 kB)</span>
+												> <span class="text-nowrap">(165.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiBold.ttf"
 													>NotoSansTeluguUI-SemiBold.ttf</a
-												> <span class="text-nowrap">(159.7 kB)</span>
+												> <span class="text-nowrap">(165.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensed.ttf"
 													>NotoSansTeluguUI-SemiCondensed.ttf</a
-												> <span class="text-nowrap">(158.6 kB)</span>
+												> <span class="text-nowrap">(164.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensedBlack.ttf"
 													>NotoSansTeluguUI-SemiCondensedBlack.ttf</a
-												> <span class="text-nowrap">(155.3 kB)</span>
+												> <span class="text-nowrap">(161.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensedBold.ttf"
 													>NotoSansTeluguUI-SemiCondensedBold.ttf</a
-												> <span class="text-nowrap">(159.0 kB)</span>
+												> <span class="text-nowrap">(165.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensedExtraBold.ttf"
 													>NotoSansTeluguUI-SemiCondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(156.2 kB)</span>
+												> <span class="text-nowrap">(162.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensedExtraLight.ttf"
 													>NotoSansTeluguUI-SemiCondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(158.3 kB)</span>
+												> <span class="text-nowrap">(164.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensedLight.ttf"
 													>NotoSansTeluguUI-SemiCondensedLight.ttf</a
-												> <span class="text-nowrap">(158.0 kB)</span>
+												> <span class="text-nowrap">(164.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensedMedium.ttf"
 													>NotoSansTeluguUI-SemiCondensedMedium.ttf</a
-												> <span class="text-nowrap">(157.8 kB)</span>
+												> <span class="text-nowrap">(164.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensedSemiBold.ttf"
 													>NotoSansTeluguUI-SemiCondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(158.1 kB)</span>
+												> <span class="text-nowrap">(164.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-SemiCondensedThin.ttf"
 													>NotoSansTeluguUI-SemiCondensedThin.ttf</a
-												> <span class="text-nowrap">(158.3 kB)</span>
+												> <span class="text-nowrap">(164.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/ttf/NotoSansTeluguUI-Thin.ttf"
 													>NotoSansTeluguUI-Thin.ttf</a
-												> <span class="text-nowrap">(160.6 kB)</span>
+												> <span class="text-nowrap">(166.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/unhinted/variable-ttf/NotoSansTelugu[wdth,wght].ttf"
 													>NotoSansTelugu[wdth,wght].ttf</a
-												> <span class="text-nowrap">(781.1 kB)</span>
+												> <span class="text-nowrap">(787.7 kB)</span>
 												
 											</li>
 										</ul>
@@ -87902,504 +87912,504 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-Black.ttf"
 													>NotoSansTelugu-Black.ttf</a
-												> <span class="text-nowrap">(241.1 kB)</span>
+												> <span class="text-nowrap">(246.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-Bold.ttf"
 													>NotoSansTelugu-Bold.ttf</a
-												> <span class="text-nowrap">(237.6 kB)</span>
+												> <span class="text-nowrap">(242.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-Condensed.ttf"
 													>NotoSansTelugu-Condensed.ttf</a
-												> <span class="text-nowrap">(223.6 kB)</span>
+												> <span class="text-nowrap">(228.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-CondensedBlack.ttf"
 													>NotoSansTelugu-CondensedBlack.ttf</a
-												> <span class="text-nowrap">(239.2 kB)</span>
+												> <span class="text-nowrap">(244.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-CondensedBold.ttf"
 													>NotoSansTelugu-CondensedBold.ttf</a
-												> <span class="text-nowrap">(237.6 kB)</span>
+												> <span class="text-nowrap">(242.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-CondensedExtraBold.ttf"
 													>NotoSansTelugu-CondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(237.4 kB)</span>
+												> <span class="text-nowrap">(242.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-CondensedExtraLight.ttf"
 													>NotoSansTelugu-CondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(215.7 kB)</span>
+												> <span class="text-nowrap">(220.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-CondensedLight.ttf"
 													>NotoSansTelugu-CondensedLight.ttf</a
-												> <span class="text-nowrap">(222.0 kB)</span>
+												> <span class="text-nowrap">(227.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-CondensedMedium.ttf"
 													>NotoSansTelugu-CondensedMedium.ttf</a
-												> <span class="text-nowrap">(233.1 kB)</span>
+												> <span class="text-nowrap">(238.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-CondensedSemiBold.ttf"
 													>NotoSansTelugu-CondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(236.2 kB)</span>
+												> <span class="text-nowrap">(241.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-CondensedThin.ttf"
 													>NotoSansTelugu-CondensedThin.ttf</a
-												> <span class="text-nowrap">(224.0 kB)</span>
+												> <span class="text-nowrap">(229.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraBold.ttf"
 													>NotoSansTelugu-ExtraBold.ttf</a
-												> <span class="text-nowrap">(238.1 kB)</span>
+												> <span class="text-nowrap">(243.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensed.ttf"
 													>NotoSansTelugu-ExtraCondensed.ttf</a
-												> <span class="text-nowrap">(225.2 kB)</span>
+												> <span class="text-nowrap">(230.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensedBlack.ttf"
 													>NotoSansTelugu-ExtraCondensedBlack.ttf</a
-												> <span class="text-nowrap">(239.1 kB)</span>
+												> <span class="text-nowrap">(244.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensedBold.ttf"
 													>NotoSansTelugu-ExtraCondensedBold.ttf</a
-												> <span class="text-nowrap">(237.3 kB)</span>
+												> <span class="text-nowrap">(242.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensedExtraBold.ttf"
 													>NotoSansTelugu-ExtraCondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(237.0 kB)</span>
+												> <span class="text-nowrap">(242.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensedExtraLight.ttf"
 													>NotoSansTelugu-ExtraCondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(214.9 kB)</span>
+												> <span class="text-nowrap">(220.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensedLight.ttf"
 													>NotoSansTelugu-ExtraCondensedLight.ttf</a
-												> <span class="text-nowrap">(221.4 kB)</span>
+												> <span class="text-nowrap">(226.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensedMedium.ttf"
 													>NotoSansTelugu-ExtraCondensedMedium.ttf</a
-												> <span class="text-nowrap">(233.5 kB)</span>
+												> <span class="text-nowrap">(238.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensedSemiBold.ttf"
 													>NotoSansTelugu-ExtraCondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(234.6 kB)</span>
+												> <span class="text-nowrap">(239.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraCondensedThin.ttf"
 													>NotoSansTelugu-ExtraCondensedThin.ttf</a
-												> <span class="text-nowrap">(219.3 kB)</span>
+												> <span class="text-nowrap">(224.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-ExtraLight.ttf"
 													>NotoSansTelugu-ExtraLight.ttf</a
-												> <span class="text-nowrap">(217.9 kB)</span>
+												> <span class="text-nowrap">(223.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-Light.ttf"
 													>NotoSansTelugu-Light.ttf</a
-												> <span class="text-nowrap">(224.0 kB)</span>
+												> <span class="text-nowrap">(229.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-Medium.ttf"
 													>NotoSansTelugu-Medium.ttf</a
-												> <span class="text-nowrap">(238.6 kB)</span>
+												> <span class="text-nowrap">(243.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-Regular.ttf"
 													>NotoSansTelugu-Regular.ttf</a
-												> <span class="text-nowrap">(229.4 kB)</span>
+												> <span class="text-nowrap">(234.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiBold.ttf"
 													>NotoSansTelugu-SemiBold.ttf</a
-												> <span class="text-nowrap">(241.8 kB)</span>
+												> <span class="text-nowrap">(246.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensed.ttf"
 													>NotoSansTelugu-SemiCondensed.ttf</a
-												> <span class="text-nowrap">(225.3 kB)</span>
+												> <span class="text-nowrap">(230.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensedBlack.ttf"
 													>NotoSansTelugu-SemiCondensedBlack.ttf</a
-												> <span class="text-nowrap">(242.3 kB)</span>
+												> <span class="text-nowrap">(247.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensedBold.ttf"
 													>NotoSansTelugu-SemiCondensedBold.ttf</a
-												> <span class="text-nowrap">(236.7 kB)</span>
+												> <span class="text-nowrap">(241.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensedExtraBold.ttf"
 													>NotoSansTelugu-SemiCondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(236.5 kB)</span>
+												> <span class="text-nowrap">(241.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensedExtraLight.ttf"
 													>NotoSansTelugu-SemiCondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(218.4 kB)</span>
+												> <span class="text-nowrap">(223.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensedLight.ttf"
 													>NotoSansTelugu-SemiCondensedLight.ttf</a
-												> <span class="text-nowrap">(222.4 kB)</span>
+												> <span class="text-nowrap">(227.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensedMedium.ttf"
 													>NotoSansTelugu-SemiCondensedMedium.ttf</a
-												> <span class="text-nowrap">(235.7 kB)</span>
+												> <span class="text-nowrap">(240.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensedSemiBold.ttf"
 													>NotoSansTelugu-SemiCondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(235.9 kB)</span>
+												> <span class="text-nowrap">(241.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-SemiCondensedThin.ttf"
 													>NotoSansTelugu-SemiCondensedThin.ttf</a
-												> <span class="text-nowrap">(218.4 kB)</span>
+												> <span class="text-nowrap">(223.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTelugu-Thin.ttf"
 													>NotoSansTelugu-Thin.ttf</a
-												> <span class="text-nowrap">(215.2 kB)</span>
+												> <span class="text-nowrap">(220.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-Black.ttf"
 													>NotoSansTeluguUI-Black.ttf</a
-												> <span class="text-nowrap">(241.3 kB)</span>
+												> <span class="text-nowrap">(247.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-Bold.ttf"
 													>NotoSansTeluguUI-Bold.ttf</a
-												> <span class="text-nowrap">(237.6 kB)</span>
+												> <span class="text-nowrap">(243.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-Condensed.ttf"
 													>NotoSansTeluguUI-Condensed.ttf</a
-												> <span class="text-nowrap">(204.5 kB)</span>
+												> <span class="text-nowrap">(204.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-CondensedBlack.ttf"
 													>NotoSansTeluguUI-CondensedBlack.ttf</a
-												> <span class="text-nowrap">(218.8 kB)</span>
+												> <span class="text-nowrap">(219.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-CondensedBold.ttf"
 													>NotoSansTeluguUI-CondensedBold.ttf</a
-												> <span class="text-nowrap">(217.0 kB)</span>
+												> <span class="text-nowrap">(217.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-CondensedExtraBold.ttf"
 													>NotoSansTeluguUI-CondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(216.5 kB)</span>
+												> <span class="text-nowrap">(217.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-CondensedExtraLight.ttf"
 													>NotoSansTeluguUI-CondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(215.6 kB)</span>
+												> <span class="text-nowrap">(221.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-CondensedLight.ttf"
 													>NotoSansTeluguUI-CondensedLight.ttf</a
-												> <span class="text-nowrap">(222.0 kB)</span>
+												> <span class="text-nowrap">(228.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-CondensedMedium.ttf"
 													>NotoSansTeluguUI-CondensedMedium.ttf</a
-												> <span class="text-nowrap">(214.1 kB)</span>
+												> <span class="text-nowrap">(214.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-CondensedSemiBold.ttf"
 													>NotoSansTeluguUI-CondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(215.9 kB)</span>
+												> <span class="text-nowrap">(216.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-CondensedThin.ttf"
 													>NotoSansTeluguUI-CondensedThin.ttf</a
-												> <span class="text-nowrap">(223.9 kB)</span>
+												> <span class="text-nowrap">(230.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraBold.ttf"
 													>NotoSansTeluguUI-ExtraBold.ttf</a
-												> <span class="text-nowrap">(238.2 kB)</span>
+												> <span class="text-nowrap">(244.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensed.ttf"
 													>NotoSansTeluguUI-ExtraCondensed.ttf</a
-												> <span class="text-nowrap">(206.3 kB)</span>
+												> <span class="text-nowrap">(206.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensedBlack.ttf"
 													>NotoSansTeluguUI-ExtraCondensedBlack.ttf</a
-												> <span class="text-nowrap">(218.8 kB)</span>
+												> <span class="text-nowrap">(219.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensedBold.ttf"
 													>NotoSansTeluguUI-ExtraCondensedBold.ttf</a
-												> <span class="text-nowrap">(216.5 kB)</span>
+												> <span class="text-nowrap">(217.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensedExtraBold.ttf"
 													>NotoSansTeluguUI-ExtraCondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(216.5 kB)</span>
+												> <span class="text-nowrap">(217.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensedExtraLight.ttf"
 													>NotoSansTeluguUI-ExtraCondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(197.3 kB)</span>
+												> <span class="text-nowrap">(197.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensedLight.ttf"
 													>NotoSansTeluguUI-ExtraCondensedLight.ttf</a
-												> <span class="text-nowrap">(203.2 kB)</span>
+												> <span class="text-nowrap">(203.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensedMedium.ttf"
 													>NotoSansTeluguUI-ExtraCondensedMedium.ttf</a
-												> <span class="text-nowrap">(214.0 kB)</span>
+												> <span class="text-nowrap">(214.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensedSemiBold.ttf"
 													>NotoSansTeluguUI-ExtraCondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(214.5 kB)</span>
+												> <span class="text-nowrap">(215.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraCondensedThin.ttf"
 													>NotoSansTeluguUI-ExtraCondensedThin.ttf</a
-												> <span class="text-nowrap">(201.6 kB)</span>
+												> <span class="text-nowrap">(201.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-ExtraLight.ttf"
 													>NotoSansTeluguUI-ExtraLight.ttf</a
-												> <span class="text-nowrap">(217.9 kB)</span>
+												> <span class="text-nowrap">(224.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-Light.ttf"
 													>NotoSansTeluguUI-Light.ttf</a
-												> <span class="text-nowrap">(224.0 kB)</span>
+												> <span class="text-nowrap">(230.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-Medium.ttf"
 													>NotoSansTeluguUI-Medium.ttf</a
-												> <span class="text-nowrap">(238.6 kB)</span>
+												> <span class="text-nowrap">(244.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-Regular.ttf"
 													>NotoSansTeluguUI-Regular.ttf</a
-												> <span class="text-nowrap">(229.5 kB)</span>
+												> <span class="text-nowrap">(235.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiBold.ttf"
 													>NotoSansTeluguUI-SemiBold.ttf</a
-												> <span class="text-nowrap">(241.8 kB)</span>
+												> <span class="text-nowrap">(248.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensed.ttf"
 													>NotoSansTeluguUI-SemiCondensed.ttf</a
-												> <span class="text-nowrap">(225.7 kB)</span>
+												> <span class="text-nowrap">(232.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensedBlack.ttf"
 													>NotoSansTeluguUI-SemiCondensedBlack.ttf</a
-												> <span class="text-nowrap">(242.5 kB)</span>
+												> <span class="text-nowrap">(248.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensedBold.ttf"
 													>NotoSansTeluguUI-SemiCondensedBold.ttf</a
-												> <span class="text-nowrap">(236.7 kB)</span>
+												> <span class="text-nowrap">(243.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensedExtraBold.ttf"
 													>NotoSansTeluguUI-SemiCondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(236.5 kB)</span>
+												> <span class="text-nowrap">(243.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensedExtraLight.ttf"
 													>NotoSansTeluguUI-SemiCondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(218.3 kB)</span>
+												> <span class="text-nowrap">(224.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensedLight.ttf"
 													>NotoSansTeluguUI-SemiCondensedLight.ttf</a
-												> <span class="text-nowrap">(222.3 kB)</span>
+												> <span class="text-nowrap">(228.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensedMedium.ttf"
 													>NotoSansTeluguUI-SemiCondensedMedium.ttf</a
-												> <span class="text-nowrap">(235.7 kB)</span>
+												> <span class="text-nowrap">(241.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensedSemiBold.ttf"
 													>NotoSansTeluguUI-SemiCondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(235.9 kB)</span>
+												> <span class="text-nowrap">(242.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-SemiCondensedThin.ttf"
 													>NotoSansTeluguUI-SemiCondensedThin.ttf</a
-												> <span class="text-nowrap">(218.5 kB)</span>
+												> <span class="text-nowrap">(224.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/hinted/ttf/NotoSansTeluguUI-Thin.ttf"
 													>NotoSansTeluguUI-Thin.ttf</a
-												> <span class="text-nowrap">(215.3 kB)</span>
+												> <span class="text-nowrap">(221.4 kB)</span>
 												
 											</li>
 										</ul>
@@ -88412,7 +88422,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-Black.otf"
 													>NotoSansTelugu-Black.otf</a
-												> <span class="text-nowrap">(129.6 kB)</span>
+												> <span class="text-nowrap">(138.2 kB)</span>
 												
 												</li>
 											</li>
@@ -88420,7 +88430,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-Bold.otf"
 													>NotoSansTelugu-Bold.otf</a
-												> <span class="text-nowrap">(130.1 kB)</span>
+												> <span class="text-nowrap">(138.6 kB)</span>
 												
 												</li>
 											</li>
@@ -88428,7 +88438,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-Condensed.otf"
 													>NotoSansTelugu-Condensed.otf</a
-												> <span class="text-nowrap">(138.8 kB)</span>
+												> <span class="text-nowrap">(146.8 kB)</span>
 												
 												</li>
 											</li>
@@ -88436,7 +88446,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-CondensedBlack.otf"
 													>NotoSansTelugu-CondensedBlack.otf</a
-												> <span class="text-nowrap">(142.8 kB)</span>
+												> <span class="text-nowrap">(150.3 kB)</span>
 												
 												</li>
 											</li>
@@ -88444,7 +88454,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-CondensedBold.otf"
 													>NotoSansTelugu-CondensedBold.otf</a
-												> <span class="text-nowrap">(150.7 kB)</span>
+												> <span class="text-nowrap">(159.1 kB)</span>
 												
 												</li>
 											</li>
@@ -88452,7 +88462,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-CondensedExtraBold.otf"
 													>NotoSansTelugu-CondensedExtraBold.otf</a
-												> <span class="text-nowrap">(149.0 kB)</span>
+												> <span class="text-nowrap">(157.8 kB)</span>
 												
 												</li>
 											</li>
@@ -88460,7 +88470,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-CondensedExtraLight.otf"
 													>NotoSansTelugu-CondensedExtraLight.otf</a
-												> <span class="text-nowrap">(140.4 kB)</span>
+												> <span class="text-nowrap">(148.0 kB)</span>
 												
 												</li>
 											</li>
@@ -88468,7 +88478,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-CondensedLight.otf"
 													>NotoSansTelugu-CondensedLight.otf</a
-												> <span class="text-nowrap">(141.1 kB)</span>
+												> <span class="text-nowrap">(149.7 kB)</span>
 												
 												</li>
 											</li>
@@ -88476,7 +88486,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-CondensedMedium.otf"
 													>NotoSansTelugu-CondensedMedium.otf</a
-												> <span class="text-nowrap">(145.3 kB)</span>
+												> <span class="text-nowrap">(154.4 kB)</span>
 												
 												</li>
 											</li>
@@ -88484,7 +88494,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-CondensedSemiBold.otf"
 													>NotoSansTelugu-CondensedSemiBold.otf</a
-												> <span class="text-nowrap">(148.3 kB)</span>
+												> <span class="text-nowrap">(157.3 kB)</span>
 												
 												</li>
 											</li>
@@ -88492,7 +88502,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-CondensedThin.otf"
 													>NotoSansTelugu-CondensedThin.otf</a
-												> <span class="text-nowrap">(133.7 kB)</span>
+												> <span class="text-nowrap">(143.1 kB)</span>
 												
 												</li>
 											</li>
@@ -88500,7 +88510,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-ExtraBold.otf"
 													>NotoSansTelugu-ExtraBold.otf</a
-												> <span class="text-nowrap">(145.0 kB)</span>
+												> <span class="text-nowrap">(154.4 kB)</span>
 												
 												</li>
 											</li>
@@ -88508,7 +88518,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensed.otf"
 													>NotoSansTelugu-ExtraCondensed.otf</a
-												> <span class="text-nowrap">(120.7 kB)</span>
+												> <span class="text-nowrap">(129.3 kB)</span>
 												
 												</li>
 											</li>
@@ -88516,7 +88526,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensedBlack.otf"
 													>NotoSansTelugu-ExtraCondensedBlack.otf</a
-												> <span class="text-nowrap">(128.5 kB)</span>
+												> <span class="text-nowrap">(136.6 kB)</span>
 												
 												</li>
 											</li>
@@ -88524,7 +88534,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensedBold.otf"
 													>NotoSansTelugu-ExtraCondensedBold.otf</a
-												> <span class="text-nowrap">(149.3 kB)</span>
+												> <span class="text-nowrap">(157.9 kB)</span>
 												
 												</li>
 											</li>
@@ -88532,7 +88542,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensedExtraBold.otf"
 													>NotoSansTelugu-ExtraCondensedExtraBold.otf</a
-												> <span class="text-nowrap">(150.0 kB)</span>
+												> <span class="text-nowrap">(158.7 kB)</span>
 												
 												</li>
 											</li>
@@ -88540,7 +88550,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensedExtraLight.otf"
 													>NotoSansTelugu-ExtraCondensedExtraLight.otf</a
-												> <span class="text-nowrap">(136.4 kB)</span>
+												> <span class="text-nowrap">(144.9 kB)</span>
 												
 												</li>
 											</li>
@@ -88548,7 +88558,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensedLight.otf"
 													>NotoSansTelugu-ExtraCondensedLight.otf</a
-												> <span class="text-nowrap">(133.9 kB)</span>
+												> <span class="text-nowrap">(142.5 kB)</span>
 												
 												</li>
 											</li>
@@ -88556,7 +88566,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensedMedium.otf"
 													>NotoSansTelugu-ExtraCondensedMedium.otf</a
-												> <span class="text-nowrap">(145.6 kB)</span>
+												> <span class="text-nowrap">(154.7 kB)</span>
 												
 												</li>
 											</li>
@@ -88564,7 +88574,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensedSemiBold.otf"
 													>NotoSansTelugu-ExtraCondensedSemiBold.otf</a
-												> <span class="text-nowrap">(147.0 kB)</span>
+												> <span class="text-nowrap">(156.2 kB)</span>
 												
 												</li>
 											</li>
@@ -88572,7 +88582,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-ExtraCondensedThin.otf"
 													>NotoSansTelugu-ExtraCondensedThin.otf</a
-												> <span class="text-nowrap">(120.2 kB)</span>
+												> <span class="text-nowrap">(128.2 kB)</span>
 												
 												</li>
 											</li>
@@ -88580,7 +88590,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-ExtraLight.otf"
 													>NotoSansTelugu-ExtraLight.otf</a
-												> <span class="text-nowrap">(138.9 kB)</span>
+												> <span class="text-nowrap">(147.2 kB)</span>
 												
 												</li>
 											</li>
@@ -88588,7 +88598,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-Light.otf"
 													>NotoSansTelugu-Light.otf</a
-												> <span class="text-nowrap">(136.1 kB)</span>
+												> <span class="text-nowrap">(144.1 kB)</span>
 												
 												</li>
 											</li>
@@ -88596,7 +88606,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-Medium.otf"
 													>NotoSansTelugu-Medium.otf</a
-												> <span class="text-nowrap">(143.3 kB)</span>
+												> <span class="text-nowrap">(151.9 kB)</span>
 												
 												</li>
 											</li>
@@ -88604,7 +88614,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-Regular.otf"
 													>NotoSansTelugu-Regular.otf</a
-												> <span class="text-nowrap">(124.4 kB)</span>
+												> <span class="text-nowrap">(132.7 kB)</span>
 												
 												</li>
 											</li>
@@ -88612,7 +88622,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-SemiBold.otf"
 													>NotoSansTelugu-SemiBold.otf</a
-												> <span class="text-nowrap">(144.8 kB)</span>
+												> <span class="text-nowrap">(153.2 kB)</span>
 												
 												</li>
 											</li>
@@ -88620,7 +88630,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensed.otf"
 													>NotoSansTelugu-SemiCondensed.otf</a
-												> <span class="text-nowrap">(137.6 kB)</span>
+												> <span class="text-nowrap">(145.7 kB)</span>
 												
 												</li>
 											</li>
@@ -88628,7 +88638,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensedBlack.otf"
 													>NotoSansTelugu-SemiCondensedBlack.otf</a
-												> <span class="text-nowrap">(142.7 kB)</span>
+												> <span class="text-nowrap">(151.6 kB)</span>
 												
 												</li>
 											</li>
@@ -88636,7 +88646,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensedBold.otf"
 													>NotoSansTelugu-SemiCondensedBold.otf</a
-												> <span class="text-nowrap">(150.1 kB)</span>
+												> <span class="text-nowrap">(158.5 kB)</span>
 												
 												</li>
 											</li>
@@ -88644,7 +88654,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensedExtraBold.otf"
 													>NotoSansTelugu-SemiCondensedExtraBold.otf</a
-												> <span class="text-nowrap">(150.6 kB)</span>
+												> <span class="text-nowrap">(158.6 kB)</span>
 												
 												</li>
 											</li>
@@ -88652,7 +88662,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensedExtraLight.otf"
 													>NotoSansTelugu-SemiCondensedExtraLight.otf</a
-												> <span class="text-nowrap">(140.8 kB)</span>
+												> <span class="text-nowrap">(148.7 kB)</span>
 												
 												</li>
 											</li>
@@ -88660,7 +88670,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensedLight.otf"
 													>NotoSansTelugu-SemiCondensedLight.otf</a
-												> <span class="text-nowrap">(141.8 kB)</span>
+												> <span class="text-nowrap">(150.1 kB)</span>
 												
 												</li>
 											</li>
@@ -88668,7 +88678,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensedMedium.otf"
 													>NotoSansTelugu-SemiCondensedMedium.otf</a
-												> <span class="text-nowrap">(145.6 kB)</span>
+												> <span class="text-nowrap">(153.7 kB)</span>
 												
 												</li>
 											</li>
@@ -88676,7 +88686,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensedSemiBold.otf"
 													>NotoSansTelugu-SemiCondensedSemiBold.otf</a
-												> <span class="text-nowrap">(147.8 kB)</span>
+												> <span class="text-nowrap">(156.7 kB)</span>
 												
 												</li>
 											</li>
@@ -88684,7 +88694,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-SemiCondensedThin.otf"
 													>NotoSansTelugu-SemiCondensedThin.otf</a
-												> <span class="text-nowrap">(135.5 kB)</span>
+												> <span class="text-nowrap">(144.2 kB)</span>
 												
 												</li>
 											</li>
@@ -88692,7 +88702,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTelugu-Thin.otf"
 													>NotoSansTelugu-Thin.otf</a
-												> <span class="text-nowrap">(120.6 kB)</span>
+												> <span class="text-nowrap">(128.5 kB)</span>
 												
 												</li>
 											</li>
@@ -88700,7 +88710,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-Black.otf"
 													>NotoSansTeluguUI-Black.otf</a
-												> <span class="text-nowrap">(129.2 kB)</span>
+												> <span class="text-nowrap">(138.6 kB)</span>
 												
 												</li>
 											</li>
@@ -88708,7 +88718,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-Bold.otf"
 													>NotoSansTeluguUI-Bold.otf</a
-												> <span class="text-nowrap">(129.9 kB)</span>
+												> <span class="text-nowrap">(139.3 kB)</span>
 												
 												</li>
 											</li>
@@ -88716,7 +88726,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-Condensed.otf"
 													>NotoSansTeluguUI-Condensed.otf</a
-												> <span class="text-nowrap">(103.6 kB)</span>
+												> <span class="text-nowrap">(104.3 kB)</span>
 												
 												</li>
 											</li>
@@ -88724,7 +88734,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-CondensedBlack.otf"
 													>NotoSansTeluguUI-CondensedBlack.otf</a
-												> <span class="text-nowrap">(106.3 kB)</span>
+												> <span class="text-nowrap">(108.7 kB)</span>
 												
 												</li>
 											</li>
@@ -88732,7 +88742,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-CondensedBold.otf"
 													>NotoSansTeluguUI-CondensedBold.otf</a
-												> <span class="text-nowrap">(113.5 kB)</span>
+												> <span class="text-nowrap">(114.9 kB)</span>
 												
 												</li>
 											</li>
@@ -88740,7 +88750,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-CondensedExtraBold.otf"
 													>NotoSansTeluguUI-CondensedExtraBold.otf</a
-												> <span class="text-nowrap">(112.0 kB)</span>
+												> <span class="text-nowrap">(113.2 kB)</span>
 												
 												</li>
 											</li>
@@ -88748,7 +88758,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-CondensedExtraLight.otf"
 													>NotoSansTeluguUI-CondensedExtraLight.otf</a
-												> <span class="text-nowrap">(139.9 kB)</span>
+												> <span class="text-nowrap">(148.9 kB)</span>
 												
 												</li>
 											</li>
@@ -88756,7 +88766,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-CondensedLight.otf"
 													>NotoSansTeluguUI-CondensedLight.otf</a
-												> <span class="text-nowrap">(141.2 kB)</span>
+												> <span class="text-nowrap">(150.9 kB)</span>
 												
 												</li>
 											</li>
@@ -88764,7 +88774,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-CondensedMedium.otf"
 													>NotoSansTeluguUI-CondensedMedium.otf</a
-												> <span class="text-nowrap">(110.1 kB)</span>
+												> <span class="text-nowrap">(110.8 kB)</span>
 												
 												</li>
 											</li>
@@ -88772,7 +88782,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-CondensedSemiBold.otf"
 													>NotoSansTeluguUI-CondensedSemiBold.otf</a
-												> <span class="text-nowrap">(111.1 kB)</span>
+												> <span class="text-nowrap">(112.3 kB)</span>
 												
 												</li>
 											</li>
@@ -88780,7 +88790,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-CondensedThin.otf"
 													>NotoSansTeluguUI-CondensedThin.otf</a
-												> <span class="text-nowrap">(134.1 kB)</span>
+												> <span class="text-nowrap">(143.5 kB)</span>
 												
 												</li>
 											</li>
@@ -88788,7 +88798,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraBold.otf"
 													>NotoSansTeluguUI-ExtraBold.otf</a
-												> <span class="text-nowrap">(145.8 kB)</span>
+												> <span class="text-nowrap">(155.5 kB)</span>
 												
 												</li>
 											</li>
@@ -88796,7 +88806,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensed.otf"
 													>NotoSansTeluguUI-ExtraCondensed.otf</a
-												> <span class="text-nowrap">(90.2 kB)</span>
+												> <span class="text-nowrap">(92.5 kB)</span>
 												
 												</li>
 											</li>
@@ -88804,7 +88814,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensedBlack.otf"
 													>NotoSansTeluguUI-ExtraCondensedBlack.otf</a
-												> <span class="text-nowrap">(96.7 kB)</span>
+												> <span class="text-nowrap">(97.7 kB)</span>
 												
 												</li>
 											</li>
@@ -88812,7 +88822,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensedBold.otf"
 													>NotoSansTeluguUI-ExtraCondensedBold.otf</a
-												> <span class="text-nowrap">(112.6 kB)</span>
+												> <span class="text-nowrap">(113.2 kB)</span>
 												
 												</li>
 											</li>
@@ -88820,7 +88830,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensedExtraBold.otf"
 													>NotoSansTeluguUI-ExtraCondensedExtraBold.otf</a
-												> <span class="text-nowrap">(112.8 kB)</span>
+												> <span class="text-nowrap">(114.2 kB)</span>
 												
 												</li>
 											</li>
@@ -88828,7 +88838,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensedExtraLight.otf"
 													>NotoSansTeluguUI-ExtraCondensedExtraLight.otf</a
-												> <span class="text-nowrap">(102.4 kB)</span>
+												> <span class="text-nowrap">(103.8 kB)</span>
 												
 												</li>
 											</li>
@@ -88836,7 +88846,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensedLight.otf"
 													>NotoSansTeluguUI-ExtraCondensedLight.otf</a
-												> <span class="text-nowrap">(102.1 kB)</span>
+												> <span class="text-nowrap">(102.4 kB)</span>
 												
 												</li>
 											</li>
@@ -88844,7 +88854,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensedMedium.otf"
 													>NotoSansTeluguUI-ExtraCondensedMedium.otf</a
-												> <span class="text-nowrap">(110.0 kB)</span>
+												> <span class="text-nowrap">(110.5 kB)</span>
 												
 												</li>
 											</li>
@@ -88852,7 +88862,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensedSemiBold.otf"
 													>NotoSansTeluguUI-ExtraCondensedSemiBold.otf</a
-												> <span class="text-nowrap">(111.1 kB)</span>
+												> <span class="text-nowrap">(112.5 kB)</span>
 												
 												</li>
 											</li>
@@ -88860,7 +88870,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraCondensedThin.otf"
 													>NotoSansTeluguUI-ExtraCondensedThin.otf</a
-												> <span class="text-nowrap">(89.4 kB)</span>
+												> <span class="text-nowrap">(91.5 kB)</span>
 												
 												</li>
 											</li>
@@ -88868,7 +88878,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-ExtraLight.otf"
 													>NotoSansTeluguUI-ExtraLight.otf</a
-												> <span class="text-nowrap">(138.1 kB)</span>
+												> <span class="text-nowrap">(147.8 kB)</span>
 												
 												</li>
 											</li>
@@ -88876,7 +88886,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-Light.otf"
 													>NotoSansTeluguUI-Light.otf</a
-												> <span class="text-nowrap">(134.9 kB)</span>
+												> <span class="text-nowrap">(144.6 kB)</span>
 												
 												</li>
 											</li>
@@ -88884,7 +88894,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-Medium.otf"
 													>NotoSansTeluguUI-Medium.otf</a
-												> <span class="text-nowrap">(143.0 kB)</span>
+												> <span class="text-nowrap">(152.3 kB)</span>
 												
 												</li>
 											</li>
@@ -88892,7 +88902,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-Regular.otf"
 													>NotoSansTeluguUI-Regular.otf</a
-												> <span class="text-nowrap">(124.4 kB)</span>
+												> <span class="text-nowrap">(134.2 kB)</span>
 												
 												</li>
 											</li>
@@ -88900,7 +88910,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiBold.otf"
 													>NotoSansTeluguUI-SemiBold.otf</a
-												> <span class="text-nowrap">(144.3 kB)</span>
+												> <span class="text-nowrap">(153.8 kB)</span>
 												
 												</li>
 											</li>
@@ -88908,7 +88918,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensed.otf"
 													>NotoSansTeluguUI-SemiCondensed.otf</a
-												> <span class="text-nowrap">(137.3 kB)</span>
+												> <span class="text-nowrap">(146.6 kB)</span>
 												
 												</li>
 											</li>
@@ -88916,7 +88926,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensedBlack.otf"
 													>NotoSansTeluguUI-SemiCondensedBlack.otf</a
-												> <span class="text-nowrap">(142.3 kB)</span>
+												> <span class="text-nowrap">(151.9 kB)</span>
 												
 												</li>
 											</li>
@@ -88924,7 +88934,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensedBold.otf"
 													>NotoSansTeluguUI-SemiCondensedBold.otf</a
-												> <span class="text-nowrap">(149.5 kB)</span>
+												> <span class="text-nowrap">(159.5 kB)</span>
 												
 												</li>
 											</li>
@@ -88932,7 +88942,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensedExtraBold.otf"
 													>NotoSansTeluguUI-SemiCondensedExtraBold.otf</a
-												> <span class="text-nowrap">(150.5 kB)</span>
+												> <span class="text-nowrap">(159.7 kB)</span>
 												
 												</li>
 											</li>
@@ -88940,7 +88950,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensedExtraLight.otf"
 													>NotoSansTeluguUI-SemiCondensedExtraLight.otf</a
-												> <span class="text-nowrap">(140.8 kB)</span>
+												> <span class="text-nowrap">(150.1 kB)</span>
 												
 												</li>
 											</li>
@@ -88948,7 +88958,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensedLight.otf"
 													>NotoSansTeluguUI-SemiCondensedLight.otf</a
-												> <span class="text-nowrap">(142.3 kB)</span>
+												> <span class="text-nowrap">(152.2 kB)</span>
 												
 												</li>
 											</li>
@@ -88956,7 +88966,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensedMedium.otf"
 													>NotoSansTeluguUI-SemiCondensedMedium.otf</a
-												> <span class="text-nowrap">(145.5 kB)</span>
+												> <span class="text-nowrap">(154.9 kB)</span>
 												
 												</li>
 											</li>
@@ -88964,7 +88974,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensedSemiBold.otf"
 													>NotoSansTeluguUI-SemiCondensedSemiBold.otf</a
-												> <span class="text-nowrap">(148.0 kB)</span>
+												> <span class="text-nowrap">(157.5 kB)</span>
 												
 												</li>
 											</li>
@@ -88972,7 +88982,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-SemiCondensedThin.otf"
 													>NotoSansTeluguUI-SemiCondensedThin.otf</a
-												> <span class="text-nowrap">(135.5 kB)</span>
+												> <span class="text-nowrap">(145.2 kB)</span>
 												
 												</li>
 											</li>
@@ -88980,15 +88990,23 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/otf/NotoSansTeluguUI-Thin.otf"
 													>NotoSansTeluguUI-Thin.otf</a
-												> <span class="text-nowrap">(120.5 kB)</span>
+												> <span class="text-nowrap">(130.0 kB)</span>
 												
+												</li>
+											</li>
+											<li class="text-nowrap">
+												<a
+													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/slim-variable-ttf/NotoSansTelugu-UI-VF.ttf"
+													>NotoSansTelugu-UI-VF.ttf</a
+												> <span class="text-nowrap">(258.3 kB)</span>
+												<span class="badge badge-pill badge-info">Slim VF<i class="material-icons" data-toggle="tooltip" data-placement="right" title="Slim variable fonts contain a limited subset of the variable font's design space, covering only weights from Regular to Bold, and Regular width. They can be used where expression is required but disk space is at a premium.">help</i></span></h6> 
 												</li>
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/slim-variable-ttf/NotoSansTelugu[wght].ttf"
 													>NotoSansTelugu[wght].ttf</a
-												> <span class="text-nowrap">(762.0 kB)</span>
+												> <span class="text-nowrap">(271.0 kB)</span>
 												<span class="badge badge-pill badge-info">Slim VF<i class="material-icons" data-toggle="tooltip" data-placement="right" title="Slim variable fonts contain a limited subset of the variable font's design space, covering only weights from Regular to Bold, and Regular width. They can be used where expression is required but disk space is at a premium.">help</i></span></h6> 
 												</li>
 											</li>
@@ -88996,7 +89014,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-Black.ttf"
 													>NotoSansTelugu-Black.ttf</a
-												> <span class="text-nowrap">(277.5 kB)</span>
+												> <span class="text-nowrap">(286.0 kB)</span>
 												
 												</li>
 											</li>
@@ -89004,7 +89022,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-Bold.ttf"
 													>NotoSansTelugu-Bold.ttf</a
-												> <span class="text-nowrap">(273.1 kB)</span>
+												> <span class="text-nowrap">(281.5 kB)</span>
 												
 												</li>
 											</li>
@@ -89012,7 +89030,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-Condensed.ttf"
 													>NotoSansTelugu-Condensed.ttf</a
-												> <span class="text-nowrap">(259.5 kB)</span>
+												> <span class="text-nowrap">(268.0 kB)</span>
 												
 												</li>
 											</li>
@@ -89020,7 +89038,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-CondensedBlack.ttf"
 													>NotoSansTelugu-CondensedBlack.ttf</a
-												> <span class="text-nowrap">(275.1 kB)</span>
+												> <span class="text-nowrap">(283.8 kB)</span>
 												
 												</li>
 											</li>
@@ -89028,7 +89046,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-CondensedBold.ttf"
 													>NotoSansTelugu-CondensedBold.ttf</a
-												> <span class="text-nowrap">(273.0 kB)</span>
+												> <span class="text-nowrap">(281.7 kB)</span>
 												
 												</li>
 											</li>
@@ -89036,7 +89054,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-CondensedExtraBold.ttf"
 													>NotoSansTelugu-CondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(272.5 kB)</span>
+												> <span class="text-nowrap">(281.2 kB)</span>
 												
 												</li>
 											</li>
@@ -89044,7 +89062,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-CondensedExtraLight.ttf"
 													>NotoSansTelugu-CondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(249.8 kB)</span>
+												> <span class="text-nowrap">(258.4 kB)</span>
 												
 												</li>
 											</li>
@@ -89052,7 +89070,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-CondensedLight.ttf"
 													>NotoSansTelugu-CondensedLight.ttf</a
-												> <span class="text-nowrap">(255.7 kB)</span>
+												> <span class="text-nowrap">(264.3 kB)</span>
 												
 												</li>
 											</li>
@@ -89060,7 +89078,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-CondensedMedium.ttf"
 													>NotoSansTelugu-CondensedMedium.ttf</a
-												> <span class="text-nowrap">(268.1 kB)</span>
+												> <span class="text-nowrap">(276.6 kB)</span>
 												
 												</li>
 											</li>
@@ -89068,7 +89086,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-CondensedSemiBold.ttf"
 													>NotoSansTelugu-CondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(271.0 kB)</span>
+												> <span class="text-nowrap">(279.6 kB)</span>
 												
 												</li>
 											</li>
@@ -89076,7 +89094,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-CondensedThin.ttf"
 													>NotoSansTelugu-CondensedThin.ttf</a
-												> <span class="text-nowrap">(258.3 kB)</span>
+												> <span class="text-nowrap">(266.9 kB)</span>
 												
 												</li>
 											</li>
@@ -89084,7 +89102,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraBold.ttf"
 													>NotoSansTelugu-ExtraBold.ttf</a
-												> <span class="text-nowrap">(273.6 kB)</span>
+												> <span class="text-nowrap">(282.2 kB)</span>
 												
 												</li>
 											</li>
@@ -89092,7 +89110,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensed.ttf"
 													>NotoSansTelugu-ExtraCondensed.ttf</a
-												> <span class="text-nowrap">(260.9 kB)</span>
+												> <span class="text-nowrap">(269.4 kB)</span>
 												
 												</li>
 											</li>
@@ -89100,7 +89118,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensedBlack.ttf"
 													>NotoSansTelugu-ExtraCondensedBlack.ttf</a
-												> <span class="text-nowrap">(274.7 kB)</span>
+												> <span class="text-nowrap">(283.3 kB)</span>
 												
 												</li>
 											</li>
@@ -89108,7 +89126,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensedBold.ttf"
 													>NotoSansTelugu-ExtraCondensedBold.ttf</a
-												> <span class="text-nowrap">(272.7 kB)</span>
+												> <span class="text-nowrap">(281.4 kB)</span>
 												
 												</li>
 											</li>
@@ -89116,7 +89134,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensedExtraBold.ttf"
 													>NotoSansTelugu-ExtraCondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(271.6 kB)</span>
+												> <span class="text-nowrap">(280.3 kB)</span>
 												
 												</li>
 											</li>
@@ -89124,7 +89142,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensedExtraLight.ttf"
 													>NotoSansTelugu-ExtraCondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(248.8 kB)</span>
+												> <span class="text-nowrap">(257.3 kB)</span>
 												
 												</li>
 											</li>
@@ -89132,7 +89150,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensedLight.ttf"
 													>NotoSansTelugu-ExtraCondensedLight.ttf</a
-												> <span class="text-nowrap">(255.2 kB)</span>
+												> <span class="text-nowrap">(263.7 kB)</span>
 												
 												</li>
 											</li>
@@ -89140,7 +89158,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensedMedium.ttf"
 													>NotoSansTelugu-ExtraCondensedMedium.ttf</a
-												> <span class="text-nowrap">(268.2 kB)</span>
+												> <span class="text-nowrap">(276.7 kB)</span>
 												
 												</li>
 											</li>
@@ -89148,7 +89166,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensedSemiBold.ttf"
 													>NotoSansTelugu-ExtraCondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(269.5 kB)</span>
+												> <span class="text-nowrap">(278.1 kB)</span>
 												
 												</li>
 											</li>
@@ -89156,7 +89174,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraCondensedThin.ttf"
 													>NotoSansTelugu-ExtraCondensedThin.ttf</a
-												> <span class="text-nowrap">(253.5 kB)</span>
+												> <span class="text-nowrap">(262.0 kB)</span>
 												
 												</li>
 											</li>
@@ -89164,7 +89182,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-ExtraLight.ttf"
 													>NotoSansTelugu-ExtraLight.ttf</a
-												> <span class="text-nowrap">(252.3 kB)</span>
+												> <span class="text-nowrap">(260.8 kB)</span>
 												
 												</li>
 											</li>
@@ -89172,7 +89190,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-Light.ttf"
 													>NotoSansTelugu-Light.ttf</a
-												> <span class="text-nowrap">(258.3 kB)</span>
+												> <span class="text-nowrap">(266.7 kB)</span>
 												
 												</li>
 											</li>
@@ -89180,7 +89198,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-Medium.ttf"
 													>NotoSansTelugu-Medium.ttf</a
-												> <span class="text-nowrap">(273.8 kB)</span>
+												> <span class="text-nowrap">(282.2 kB)</span>
 												
 												</li>
 											</li>
@@ -89188,7 +89206,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-Regular.ttf"
 													>NotoSansTelugu-Regular.ttf</a
-												> <span class="text-nowrap">(264.9 kB)</span>
+												> <span class="text-nowrap">(273.3 kB)</span>
 												
 												</li>
 											</li>
@@ -89196,7 +89214,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-SemiBold.ttf"
 													>NotoSansTelugu-SemiBold.ttf</a
-												> <span class="text-nowrap">(277.4 kB)</span>
+												> <span class="text-nowrap">(285.7 kB)</span>
 												
 												</li>
 											</li>
@@ -89204,7 +89222,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensed.ttf"
 													>NotoSansTelugu-SemiCondensed.ttf</a
-												> <span class="text-nowrap">(261.1 kB)</span>
+												> <span class="text-nowrap">(269.6 kB)</span>
 												
 												</li>
 											</li>
@@ -89212,7 +89230,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensedBlack.ttf"
 													>NotoSansTelugu-SemiCondensedBlack.ttf</a
-												> <span class="text-nowrap">(278.4 kB)</span>
+												> <span class="text-nowrap">(287.0 kB)</span>
 												
 												</li>
 											</li>
@@ -89220,7 +89238,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensedBold.ttf"
 													>NotoSansTelugu-SemiCondensedBold.ttf</a
-												> <span class="text-nowrap">(272.0 kB)</span>
+												> <span class="text-nowrap">(280.7 kB)</span>
 												
 												</li>
 											</li>
@@ -89228,7 +89246,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensedExtraBold.ttf"
 													>NotoSansTelugu-SemiCondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(271.7 kB)</span>
+												> <span class="text-nowrap">(280.5 kB)</span>
 												
 												</li>
 											</li>
@@ -89236,7 +89254,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensedExtraLight.ttf"
 													>NotoSansTelugu-SemiCondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(252.5 kB)</span>
+												> <span class="text-nowrap">(261.2 kB)</span>
 												
 												</li>
 											</li>
@@ -89244,7 +89262,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensedLight.ttf"
 													>NotoSansTelugu-SemiCondensedLight.ttf</a
-												> <span class="text-nowrap">(256.4 kB)</span>
+												> <span class="text-nowrap">(265.0 kB)</span>
 												
 												</li>
 											</li>
@@ -89252,7 +89270,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensedMedium.ttf"
 													>NotoSansTelugu-SemiCondensedMedium.ttf</a
-												> <span class="text-nowrap">(270.8 kB)</span>
+												> <span class="text-nowrap">(279.3 kB)</span>
 												
 												</li>
 											</li>
@@ -89260,7 +89278,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensedSemiBold.ttf"
 													>NotoSansTelugu-SemiCondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(271.0 kB)</span>
+												> <span class="text-nowrap">(279.6 kB)</span>
 												
 												</li>
 											</li>
@@ -89268,7 +89286,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-SemiCondensedThin.ttf"
 													>NotoSansTelugu-SemiCondensedThin.ttf</a
-												> <span class="text-nowrap">(252.7 kB)</span>
+												> <span class="text-nowrap">(261.3 kB)</span>
 												
 												</li>
 											</li>
@@ -89276,7 +89294,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTelugu-Thin.ttf"
 													>NotoSansTelugu-Thin.ttf</a
-												> <span class="text-nowrap">(249.6 kB)</span>
+												> <span class="text-nowrap">(257.9 kB)</span>
 												
 												</li>
 											</li>
@@ -89284,7 +89302,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-Black.ttf"
 													>NotoSansTeluguUI-Black.ttf</a
-												> <span class="text-nowrap">(277.7 kB)</span>
+												> <span class="text-nowrap">(287.3 kB)</span>
 												
 												</li>
 											</li>
@@ -89292,7 +89310,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-Bold.ttf"
 													>NotoSansTeluguUI-Bold.ttf</a
-												> <span class="text-nowrap">(273.1 kB)</span>
+												> <span class="text-nowrap">(282.6 kB)</span>
 												
 												</li>
 											</li>
@@ -89300,7 +89318,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-Condensed.ttf"
 													>NotoSansTeluguUI-Condensed.ttf</a
-												> <span class="text-nowrap">(204.5 kB)</span>
+												> <span class="text-nowrap">(205.0 kB)</span>
 												
 												</li>
 											</li>
@@ -89308,7 +89326,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-CondensedBlack.ttf"
 													>NotoSansTeluguUI-CondensedBlack.ttf</a
-												> <span class="text-nowrap">(218.9 kB)</span>
+												> <span class="text-nowrap">(219.8 kB)</span>
 												
 												</li>
 											</li>
@@ -89316,7 +89334,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-CondensedBold.ttf"
 													>NotoSansTeluguUI-CondensedBold.ttf</a
-												> <span class="text-nowrap">(217.0 kB)</span>
+												> <span class="text-nowrap">(217.8 kB)</span>
 												
 												</li>
 											</li>
@@ -89324,7 +89342,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-CondensedExtraBold.ttf"
 													>NotoSansTeluguUI-CondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(216.5 kB)</span>
+												> <span class="text-nowrap">(217.4 kB)</span>
 												
 												</li>
 											</li>
@@ -89332,7 +89350,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-CondensedExtraLight.ttf"
 													>NotoSansTeluguUI-CondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(249.6 kB)</span>
+												> <span class="text-nowrap">(259.3 kB)</span>
 												
 												</li>
 											</li>
@@ -89340,7 +89358,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-CondensedLight.ttf"
 													>NotoSansTeluguUI-CondensedLight.ttf</a
-												> <span class="text-nowrap">(255.7 kB)</span>
+												> <span class="text-nowrap">(265.3 kB)</span>
 												
 												</li>
 											</li>
@@ -89348,7 +89366,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-CondensedMedium.ttf"
 													>NotoSansTeluguUI-CondensedMedium.ttf</a
-												> <span class="text-nowrap">(214.2 kB)</span>
+												> <span class="text-nowrap">(214.8 kB)</span>
 												
 												</li>
 											</li>
@@ -89356,7 +89374,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-CondensedSemiBold.ttf"
 													>NotoSansTeluguUI-CondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(215.9 kB)</span>
+												> <span class="text-nowrap">(216.7 kB)</span>
 												
 												</li>
 											</li>
@@ -89364,7 +89382,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-CondensedThin.ttf"
 													>NotoSansTeluguUI-CondensedThin.ttf</a
-												> <span class="text-nowrap">(258.4 kB)</span>
+												> <span class="text-nowrap">(268.2 kB)</span>
 												
 												</li>
 											</li>
@@ -89372,7 +89390,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraBold.ttf"
 													>NotoSansTeluguUI-ExtraBold.ttf</a
-												> <span class="text-nowrap">(273.9 kB)</span>
+												> <span class="text-nowrap">(283.5 kB)</span>
 												
 												</li>
 											</li>
@@ -89380,7 +89398,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensed.ttf"
 													>NotoSansTeluguUI-ExtraCondensed.ttf</a
-												> <span class="text-nowrap">(206.3 kB)</span>
+												> <span class="text-nowrap">(207.0 kB)</span>
 												
 												</li>
 											</li>
@@ -89388,7 +89406,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensedBlack.ttf"
 													>NotoSansTeluguUI-ExtraCondensedBlack.ttf</a
-												> <span class="text-nowrap">(218.9 kB)</span>
+												> <span class="text-nowrap">(219.7 kB)</span>
 												
 												</li>
 											</li>
@@ -89396,7 +89414,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensedBold.ttf"
 													>NotoSansTeluguUI-ExtraCondensedBold.ttf</a
-												> <span class="text-nowrap">(216.6 kB)</span>
+												> <span class="text-nowrap">(217.4 kB)</span>
 												
 												</li>
 											</li>
@@ -89404,7 +89422,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensedExtraBold.ttf"
 													>NotoSansTeluguUI-ExtraCondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(216.6 kB)</span>
+												> <span class="text-nowrap">(217.4 kB)</span>
 												
 												</li>
 											</li>
@@ -89412,7 +89430,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensedExtraLight.ttf"
 													>NotoSansTeluguUI-ExtraCondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(197.4 kB)</span>
+												> <span class="text-nowrap">(197.9 kB)</span>
 												
 												</li>
 											</li>
@@ -89420,7 +89438,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensedLight.ttf"
 													>NotoSansTeluguUI-ExtraCondensedLight.ttf</a
-												> <span class="text-nowrap">(203.2 kB)</span>
+												> <span class="text-nowrap">(203.8 kB)</span>
 												
 												</li>
 											</li>
@@ -89428,7 +89446,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensedMedium.ttf"
 													>NotoSansTeluguUI-ExtraCondensedMedium.ttf</a
-												> <span class="text-nowrap">(214.1 kB)</span>
+												> <span class="text-nowrap">(214.6 kB)</span>
 												
 												</li>
 											</li>
@@ -89436,7 +89454,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensedSemiBold.ttf"
 													>NotoSansTeluguUI-ExtraCondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(214.6 kB)</span>
+												> <span class="text-nowrap">(215.3 kB)</span>
 												
 												</li>
 											</li>
@@ -89444,7 +89462,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraCondensedThin.ttf"
 													>NotoSansTeluguUI-ExtraCondensedThin.ttf</a
-												> <span class="text-nowrap">(201.6 kB)</span>
+												> <span class="text-nowrap">(202.0 kB)</span>
 												
 												</li>
 											</li>
@@ -89452,7 +89470,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-ExtraLight.ttf"
 													>NotoSansTeluguUI-ExtraLight.ttf</a
-												> <span class="text-nowrap">(252.3 kB)</span>
+												> <span class="text-nowrap">(261.9 kB)</span>
 												
 												</li>
 											</li>
@@ -89460,7 +89478,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-Light.ttf"
 													>NotoSansTeluguUI-Light.ttf</a
-												> <span class="text-nowrap">(258.3 kB)</span>
+												> <span class="text-nowrap">(267.9 kB)</span>
 												
 												</li>
 											</li>
@@ -89468,7 +89486,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-Medium.ttf"
 													>NotoSansTeluguUI-Medium.ttf</a
-												> <span class="text-nowrap">(273.8 kB)</span>
+												> <span class="text-nowrap">(283.3 kB)</span>
 												
 												</li>
 											</li>
@@ -89476,7 +89494,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-Regular.ttf"
 													>NotoSansTeluguUI-Regular.ttf</a
-												> <span class="text-nowrap">(264.8 kB)</span>
+												> <span class="text-nowrap">(274.2 kB)</span>
 												
 												</li>
 											</li>
@@ -89484,7 +89502,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiBold.ttf"
 													>NotoSansTeluguUI-SemiBold.ttf</a
-												> <span class="text-nowrap">(277.4 kB)</span>
+												> <span class="text-nowrap">(286.9 kB)</span>
 												
 												</li>
 											</li>
@@ -89492,7 +89510,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensed.ttf"
 													>NotoSansTeluguUI-SemiCondensed.ttf</a
-												> <span class="text-nowrap">(260.9 kB)</span>
+												> <span class="text-nowrap">(270.4 kB)</span>
 												
 												</li>
 											</li>
@@ -89500,7 +89518,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensedBlack.ttf"
 													>NotoSansTeluguUI-SemiCondensedBlack.ttf</a
-												> <span class="text-nowrap">(278.5 kB)</span>
+												> <span class="text-nowrap">(288.2 kB)</span>
 												
 												</li>
 											</li>
@@ -89508,7 +89526,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensedBold.ttf"
 													>NotoSansTeluguUI-SemiCondensedBold.ttf</a
-												> <span class="text-nowrap">(272.1 kB)</span>
+												> <span class="text-nowrap">(281.9 kB)</span>
 												
 												</li>
 											</li>
@@ -89516,7 +89534,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensedExtraBold.ttf"
 													>NotoSansTeluguUI-SemiCondensedExtraBold.ttf</a
-												> <span class="text-nowrap">(271.8 kB)</span>
+												> <span class="text-nowrap">(281.6 kB)</span>
 												
 												</li>
 											</li>
@@ -89524,7 +89542,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensedExtraLight.ttf"
 													>NotoSansTeluguUI-SemiCondensedExtraLight.ttf</a
-												> <span class="text-nowrap">(252.5 kB)</span>
+												> <span class="text-nowrap">(262.2 kB)</span>
 												
 												</li>
 											</li>
@@ -89532,7 +89550,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensedLight.ttf"
 													>NotoSansTeluguUI-SemiCondensedLight.ttf</a
-												> <span class="text-nowrap">(256.2 kB)</span>
+												> <span class="text-nowrap">(265.9 kB)</span>
 												
 												</li>
 											</li>
@@ -89540,7 +89558,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensedMedium.ttf"
 													>NotoSansTeluguUI-SemiCondensedMedium.ttf</a
-												> <span class="text-nowrap">(270.8 kB)</span>
+												> <span class="text-nowrap">(280.4 kB)</span>
 												
 												</li>
 											</li>
@@ -89548,7 +89566,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensedSemiBold.ttf"
 													>NotoSansTeluguUI-SemiCondensedSemiBold.ttf</a
-												> <span class="text-nowrap">(271.0 kB)</span>
+												> <span class="text-nowrap">(280.6 kB)</span>
 												
 												</li>
 											</li>
@@ -89556,7 +89574,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-SemiCondensedThin.ttf"
 													>NotoSansTeluguUI-SemiCondensedThin.ttf</a
-												> <span class="text-nowrap">(252.9 kB)</span>
+												> <span class="text-nowrap">(262.6 kB)</span>
 												
 												</li>
 											</li>
@@ -89564,7 +89582,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/ttf/NotoSansTeluguUI-Thin.ttf"
 													>NotoSansTeluguUI-Thin.ttf</a
-												> <span class="text-nowrap">(249.6 kB)</span>
+												> <span class="text-nowrap">(259.1 kB)</span>
 												
 												</li>
 											</li>
@@ -89572,7 +89590,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSansTelugu/full/variable-ttf/NotoSansTelugu[wdth,wght].ttf"
 													>NotoSansTelugu[wdth,wght].ttf</a
-												> <span class="text-nowrap">(888.8 kB)</span>
+												> <span class="text-nowrap">(902.6 kB)</span>
 												
 												</li>
 											</li>
@@ -89592,140 +89610,140 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-Black.otf"
 													>NotoSerifTelugu-Black.otf</a
-												> <span class="text-nowrap">(90.5 kB)</span>
+												> <span class="text-nowrap">(93.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-Bold.otf"
 													>NotoSerifTelugu-Bold.otf</a
-												> <span class="text-nowrap">(99.9 kB)</span>
+												> <span class="text-nowrap">(102.0 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-ExtraBold.otf"
 													>NotoSerifTelugu-ExtraBold.otf</a
-												> <span class="text-nowrap">(100.2 kB)</span>
+												> <span class="text-nowrap">(102.5 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-ExtraLight.otf"
 													>NotoSerifTelugu-ExtraLight.otf</a
-												> <span class="text-nowrap">(98.0 kB)</span>
+												> <span class="text-nowrap">(100.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-Light.otf"
 													>NotoSerifTelugu-Light.otf</a
-												> <span class="text-nowrap">(98.6 kB)</span>
+												> <span class="text-nowrap">(100.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-Medium.otf"
 													>NotoSerifTelugu-Medium.otf</a
-												> <span class="text-nowrap">(99.6 kB)</span>
+												> <span class="text-nowrap">(101.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-Regular.otf"
 													>NotoSerifTelugu-Regular.otf</a
-												> <span class="text-nowrap">(88.7 kB)</span>
+												> <span class="text-nowrap">(90.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-SemiBold.otf"
 													>NotoSerifTelugu-SemiBold.otf</a
-												> <span class="text-nowrap">(100.4 kB)</span>
+												> <span class="text-nowrap">(102.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/otf/NotoSerifTelugu-Thin.otf"
 													>NotoSerifTelugu-Thin.otf</a
-												> <span class="text-nowrap">(87.1 kB)</span>
+												> <span class="text-nowrap">(88.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/slim-variable-ttf/NotoSerifTelugu[wght].ttf"
 													>NotoSerifTelugu[wght].ttf</a
-												> <span class="text-nowrap">(477.1 kB)</span>
+												> <span class="text-nowrap">(334.6 kB)</span>
 												<span class="badge badge-pill badge-info">Slim VF<i class="material-icons" data-toggle="tooltip" data-placement="right" title="Slim variable fonts contain a limited subset of the variable font's design space, covering only weights from Regular to Bold, and Regular width. They can be used where expression is required but disk space is at a premium.">help</i></span></h6> 
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-Black.ttf"
 													>NotoSerifTelugu-Black.ttf</a
-												> <span class="text-nowrap">(189.1 kB)</span>
+												> <span class="text-nowrap">(189.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-Bold.ttf"
 													>NotoSerifTelugu-Bold.ttf</a
-												> <span class="text-nowrap">(189.7 kB)</span>
+												> <span class="text-nowrap">(190.3 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-ExtraBold.ttf"
 													>NotoSerifTelugu-ExtraBold.ttf</a
-												> <span class="text-nowrap">(189.4 kB)</span>
+												> <span class="text-nowrap">(189.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-ExtraLight.ttf"
 													>NotoSerifTelugu-ExtraLight.ttf</a
-												> <span class="text-nowrap">(193.3 kB)</span>
+												> <span class="text-nowrap">(193.8 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-Light.ttf"
 													>NotoSerifTelugu-Light.ttf</a
-												> <span class="text-nowrap">(191.0 kB)</span>
+												> <span class="text-nowrap">(191.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-Medium.ttf"
 													>NotoSerifTelugu-Medium.ttf</a
-												> <span class="text-nowrap">(190.7 kB)</span>
+												> <span class="text-nowrap">(191.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-Regular.ttf"
 													>NotoSerifTelugu-Regular.ttf</a
-												> <span class="text-nowrap">(191.9 kB)</span>
+												> <span class="text-nowrap">(192.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-SemiBold.ttf"
 													>NotoSerifTelugu-SemiBold.ttf</a
-												> <span class="text-nowrap">(190.7 kB)</span>
+												> <span class="text-nowrap">(191.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/ttf/NotoSerifTelugu-Thin.ttf"
 													>NotoSerifTelugu-Thin.ttf</a
-												> <span class="text-nowrap">(195.4 kB)</span>
+												> <span class="text-nowrap">(195.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/unhinted/variable-ttf/NotoSerifTelugu[wght].ttf"
 													>NotoSerifTelugu[wght].ttf</a
-												> <span class="text-nowrap">(477.8 kB)</span>
+												> <span class="text-nowrap">(476.7 kB)</span>
 												
 											</li>
 										</ul>
@@ -89738,63 +89756,63 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-Black.ttf"
 													>NotoSerifTelugu-Black.ttf</a
-												> <span class="text-nowrap">(372.2 kB)</span>
+												> <span class="text-nowrap">(369.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-Bold.ttf"
 													>NotoSerifTelugu-Bold.ttf</a
-												> <span class="text-nowrap">(332.2 kB)</span>
+												> <span class="text-nowrap">(331.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-ExtraBold.ttf"
 													>NotoSerifTelugu-ExtraBold.ttf</a
-												> <span class="text-nowrap">(380.6 kB)</span>
+												> <span class="text-nowrap">(376.2 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-ExtraLight.ttf"
 													>NotoSerifTelugu-ExtraLight.ttf</a
-												> <span class="text-nowrap">(320.7 kB)</span>
+												> <span class="text-nowrap">(319.1 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-Light.ttf"
 													>NotoSerifTelugu-Light.ttf</a
-												> <span class="text-nowrap">(289.0 kB)</span>
+												> <span class="text-nowrap">(287.7 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-Medium.ttf"
 													>NotoSerifTelugu-Medium.ttf</a
-												> <span class="text-nowrap">(304.6 kB)</span>
+												> <span class="text-nowrap">(303.4 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-Regular.ttf"
 													>NotoSerifTelugu-Regular.ttf</a
-												> <span class="text-nowrap">(312.0 kB)</span>
+												> <span class="text-nowrap">(310.9 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-SemiBold.ttf"
 													>NotoSerifTelugu-SemiBold.ttf</a
-												> <span class="text-nowrap">(310.7 kB)</span>
+												> <span class="text-nowrap">(309.6 kB)</span>
 												
 											</li>
 											<li class="text-nowrap">
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/hinted/ttf/NotoSerifTelugu-Thin.ttf"
 													>NotoSerifTelugu-Thin.ttf</a
-												> <span class="text-nowrap">(290.1 kB)</span>
+												> <span class="text-nowrap">(290.2 kB)</span>
 												
 											</li>
 										</ul>
@@ -89807,7 +89825,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/otf/NotoSerifTelugu-Black.otf"
 													>NotoSerifTelugu-Black.otf</a
-												> <span class="text-nowrap">(114.7 kB)</span>
+												> <span class="text-nowrap">(121.7 kB)</span>
 												
 												</li>
 											</li>
@@ -89815,7 +89833,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/otf/NotoSerifTelugu-Bold.otf"
 													>NotoSerifTelugu-Bold.otf</a
-												> <span class="text-nowrap">(124.8 kB)</span>
+												> <span class="text-nowrap">(131.9 kB)</span>
 												
 												</li>
 											</li>
@@ -89823,7 +89841,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/otf/NotoSerifTelugu-ExtraBold.otf"
 													>NotoSerifTelugu-ExtraBold.otf</a
-												> <span class="text-nowrap">(126.3 kB)</span>
+												> <span class="text-nowrap">(133.1 kB)</span>
 												
 												</li>
 											</li>
@@ -89831,7 +89849,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/otf/NotoSerifTelugu-ExtraLight.otf"
 													>NotoSerifTelugu-ExtraLight.otf</a
-												> <span class="text-nowrap">(124.1 kB)</span>
+												> <span class="text-nowrap">(131.5 kB)</span>
 												
 												</li>
 											</li>
@@ -89839,7 +89857,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/otf/NotoSerifTelugu-Light.otf"
 													>NotoSerifTelugu-Light.otf</a
-												> <span class="text-nowrap">(124.9 kB)</span>
+												> <span class="text-nowrap">(131.3 kB)</span>
 												
 												</li>
 											</li>
@@ -89847,7 +89865,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/otf/NotoSerifTelugu-Medium.otf"
 													>NotoSerifTelugu-Medium.otf</a
-												> <span class="text-nowrap">(124.7 kB)</span>
+												> <span class="text-nowrap">(132.8 kB)</span>
 												
 												</li>
 											</li>
@@ -89855,7 +89873,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/otf/NotoSerifTelugu-Regular.otf"
 													>NotoSerifTelugu-Regular.otf</a
-												> <span class="text-nowrap">(111.2 kB)</span>
+												> <span class="text-nowrap">(118.8 kB)</span>
 												
 												</li>
 											</li>
@@ -89863,7 +89881,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/otf/NotoSerifTelugu-SemiBold.otf"
 													>NotoSerifTelugu-SemiBold.otf</a
-												> <span class="text-nowrap">(125.7 kB)</span>
+												> <span class="text-nowrap">(132.9 kB)</span>
 												
 												</li>
 											</li>
@@ -89871,7 +89889,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/otf/NotoSerifTelugu-Thin.otf"
 													>NotoSerifTelugu-Thin.otf</a
-												> <span class="text-nowrap">(110.7 kB)</span>
+												> <span class="text-nowrap">(117.6 kB)</span>
 												
 												</li>
 											</li>
@@ -89879,7 +89897,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/slim-variable-ttf/NotoSerifTelugu[wght].ttf"
 													>NotoSerifTelugu[wght].ttf</a
-												> <span class="text-nowrap">(543.1 kB)</span>
+												> <span class="text-nowrap">(382.2 kB)</span>
 												<span class="badge badge-pill badge-info">Slim VF<i class="material-icons" data-toggle="tooltip" data-placement="right" title="Slim variable fonts contain a limited subset of the variable font's design space, covering only weights from Regular to Bold, and Regular width. They can be used where expression is required but disk space is at a premium.">help</i></span></h6> 
 												</li>
 											</li>
@@ -89887,7 +89905,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/ttf/NotoSerifTelugu-Black.ttf"
 													>NotoSerifTelugu-Black.ttf</a
-												> <span class="text-nowrap">(419.2 kB)</span>
+												> <span class="text-nowrap">(421.3 kB)</span>
 												
 												</li>
 											</li>
@@ -89895,7 +89913,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/ttf/NotoSerifTelugu-Bold.ttf"
 													>NotoSerifTelugu-Bold.ttf</a
-												> <span class="text-nowrap">(376.1 kB)</span>
+												> <span class="text-nowrap">(380.2 kB)</span>
 												
 												</li>
 											</li>
@@ -89903,7 +89921,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/ttf/NotoSerifTelugu-ExtraBold.ttf"
 													>NotoSerifTelugu-ExtraBold.ttf</a
-												> <span class="text-nowrap">(425.1 kB)</span>
+												> <span class="text-nowrap">(425.9 kB)</span>
 												
 												</li>
 											</li>
@@ -89911,7 +89929,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/ttf/NotoSerifTelugu-ExtraLight.ttf"
 													>NotoSerifTelugu-ExtraLight.ttf</a
-												> <span class="text-nowrap">(363.1 kB)</span>
+												> <span class="text-nowrap">(366.8 kB)</span>
 												
 												</li>
 											</li>
@@ -89919,7 +89937,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/ttf/NotoSerifTelugu-Light.ttf"
 													>NotoSerifTelugu-Light.ttf</a
-												> <span class="text-nowrap">(332.3 kB)</span>
+												> <span class="text-nowrap">(336.2 kB)</span>
 												
 												</li>
 											</li>
@@ -89927,7 +89945,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/ttf/NotoSerifTelugu-Medium.ttf"
 													>NotoSerifTelugu-Medium.ttf</a
-												> <span class="text-nowrap">(349.1 kB)</span>
+												> <span class="text-nowrap">(353.1 kB)</span>
 												
 												</li>
 											</li>
@@ -89935,7 +89953,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/ttf/NotoSerifTelugu-Regular.ttf"
 													>NotoSerifTelugu-Regular.ttf</a
-												> <span class="text-nowrap">(354.8 kB)</span>
+												> <span class="text-nowrap">(358.8 kB)</span>
 												
 												</li>
 											</li>
@@ -89943,7 +89961,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/ttf/NotoSerifTelugu-SemiBold.ttf"
 													>NotoSerifTelugu-SemiBold.ttf</a
-												> <span class="text-nowrap">(355.3 kB)</span>
+												> <span class="text-nowrap">(359.4 kB)</span>
 												
 												</li>
 											</li>
@@ -89951,7 +89969,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/ttf/NotoSerifTelugu-Thin.ttf"
 													>NotoSerifTelugu-Thin.ttf</a
-												> <span class="text-nowrap">(334.6 kB)</span>
+												> <span class="text-nowrap">(339.8 kB)</span>
 												
 												</li>
 											</li>
@@ -89959,7 +89977,7 @@ This is an administrative release
 												<a
 													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/fonts/NotoSerifTelugu/full/variable-ttf/NotoSerifTelugu[wght].ttf"
 													>NotoSerifTelugu[wght].ttf</a
-												> <span class="text-nowrap">(543.8 kB)</span>
+												> <span class="text-nowrap">(550.6 kB)</span>
 												
 												</li>
 											</li>
