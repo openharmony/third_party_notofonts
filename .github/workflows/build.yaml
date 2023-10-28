@@ -1,0 +1,23 @@
+name: Rebuild website
+on:
+  schedule:
+    - cron: '12 1 * * *'
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+            ref: main
+      - uses: actions/setup-python@v2
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+      - name: Gather information
+        run: python3 scripts/gather.py
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Build site
+        run: python3 scripts/build-site.py
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        name: Commit downloaded fonts and data
