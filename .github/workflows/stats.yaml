@@ -1,0 +1,21 @@
+name: Gather issues stats
+on:
+  schedule:
+    - cron: '0 3 * * 1'
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+            ref: main
+      - uses: actions/setup-python@v2
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+      - name: Build statistics
+        run: python3 scripts/issue-stats.py
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        name: Commit downloaded fonts and data

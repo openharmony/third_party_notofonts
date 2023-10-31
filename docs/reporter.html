@@ -1,0 +1,458 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noto Dashboard</title>
+        		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+			crossorigin="anonymous"
+		/>
+        		<script
+			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.18/dist/css/bootstrap-select.min.css"
+		/>
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.18/dist/js/bootstrap-select.min.js"
+		></script>
+		<script>
+			$(function() {
+				$('.selectpicker').selectpicker('refresh').selectpicker('toggle');
+			});
+		</script>
+		<style>
+     #searchSelect {
+      z-index: 999;
+      position: absolute;
+    }
+
+    .bootstrap-select .dropdown-toggle,
+    .bootstrap-select .dropdown-toggle:hover,
+    .bootstrap-select .dropdown-toggle:active,
+    .bootstrap-select .dropdown-toggle:focus {
+      background: none !important;
+      border: none !important;
+      outline: 0px;
+      box-shadow: none;
+    }
+
+    .dropdown-toggle::after {
+      display: none;
+    }
+
+    #searchSelect .btn.dropdown-toggle {
+      height: 0px;
+      padding: 0px;
+    }
+
+    .bootstrap-select .filter-option {
+      display: none !important;
+    }
+    .bigmargin {
+    	padding-bottom: 300px;
+    }
+		</style>
+    </head>
+    <body>
+  		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container-fluid">
+					<div class="mx-auto order-0">
+						<a class="navbar-brand" href="#"> Noto Dashboard </a>
+					</div>
+				</div>
+			</nav>
+			<div class="container my-5">
+			    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+			      <div class="p-3 p-lg-5 pt-lg-3">
+			        <h1 class="display-4 fw-bold lh-1">Report an issue in a Noto font</h1>
+			        <p class="lead">To report an issue, please first choose the font.</p>
+			        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3 bigmargin">
+
+						<ul class="navbar-nav">
+							<select
+								id="select"
+								class="selectpicker w-auto"
+								data-live-search="true"
+								onchange="if (this.value) { location = 'https://github.com/notofonts/'+this.value+'/issues/new/choose' };"
+							>
+								<option value="">-- Select a font --</option>
+								<option value="adlam">Noto Adlam</option>
+									<option value="adlam"> - Noto Sans Adlam</option>
+									<option value="adlam"> - Noto Sans Adlam Unjoined</option>
+								<option value="ahom">Noto Ahom</option>
+									<option value="ahom"> - Noto Serif Ahom</option>
+								<option value="anatolian-hieroglyphs">Noto Anatolian Hieroglyphs</option>
+									<option value="anatolian-hieroglyphs"> - Noto Sans Anatolian Hieroglyphs</option>
+								<option value="arabic">Noto Arabic</option>
+									<option value="arabic"> - Noto Naskh Arabic</option>
+									<option value="arabic"> - Noto Naskh Arabic UI</option>
+									<option value="arabic"> - Noto Sans Arabic</option>
+								<option value="armenian">Noto Armenian</option>
+									<option value="armenian"> - Noto Sans Armenian</option>
+									<option value="armenian"> - Noto Serif Armenian</option>
+								<option value="avestan">Noto Avestan</option>
+									<option value="avestan"> - Noto Sans Avestan</option>
+								<option value="balinese">Noto Balinese</option>
+									<option value="balinese"> - Noto Sans Balinese</option>
+									<option value="balinese"> - Noto Serif Balinese</option>
+								<option value="bamum">Noto Bamum</option>
+									<option value="bamum"> - Noto Sans Bamum</option>
+								<option value="bassa-vah">Noto Bassa Vah</option>
+									<option value="bassa-vah"> - Noto Sans Bassa Vah</option>
+								<option value="batak">Noto Batak</option>
+									<option value="batak"> - Noto Sans Batak</option>
+								<option value="bengali">Noto Bengali</option>
+									<option value="bengali"> - Noto Sans Bengali</option>
+									<option value="bengali"> - Noto Serif Bengali</option>
+								<option value="bhaiksuki">Noto Bhaiksuki</option>
+									<option value="bhaiksuki"> - Noto Sans Bhaiksuki</option>
+								<option value="brahmi">Noto Brahmi</option>
+									<option value="brahmi"> - Noto Sans Brahmi</option>
+								<option value="buginese">Noto Buginese</option>
+									<option value="buginese"> - Noto Sans Buginese</option>
+								<option value="buhid">Noto Buhid</option>
+									<option value="buhid"> - Noto Sans Buhid</option>
+								<option value="canadian-aboriginal">Noto Canadian Aboriginal</option>
+									<option value="canadian-aboriginal"> - Noto Sans Canadian Aboriginal</option>
+								<option value="carian">Noto Carian</option>
+									<option value="carian"> - Noto Sans Carian</option>
+								<option value="caucasian-albanian">Noto Caucasian Albanian</option>
+									<option value="caucasian-albanian"> - Noto Sans Caucasian Albanian</option>
+								<option value="chakma">Noto Chakma</option>
+									<option value="chakma"> - Noto Sans Chakma</option>
+								<option value="cham">Noto Cham</option>
+									<option value="cham"> - Noto Sans Cham</option>
+								<option value="cherokee">Noto Cherokee</option>
+									<option value="cherokee"> - Noto Sans Cherokee</option>
+								<option value="chorasmian">Noto Chorasmian</option>
+									<option value="chorasmian"> - Noto Sans Chorasmian</option>
+								<option value="coptic">Noto Coptic</option>
+									<option value="coptic"> - Noto Sans Coptic</option>
+								<option value="cuneiform">Noto Cuneiform</option>
+									<option value="cuneiform"> - Noto Sans Cuneiform</option>
+								<option value="cypriot">Noto Cypriot</option>
+									<option value="cypriot"> - Noto Sans Cypriot</option>
+								<option value="cypro-minoan">Noto Cypro Minoan</option>
+									<option value="cypro-minoan"> - Noto Sans Cypro Minoan</option>
+								<option value="deseret">Noto Deseret</option>
+									<option value="deseret"> - Noto Sans Deseret</option>
+								<option value="devanagari">Noto Devanagari</option>
+									<option value="devanagari"> - Noto Sans Devanagari</option>
+									<option value="devanagari"> - Noto Serif Devanagari</option>
+								<option value="dives-akuru">Noto Dives Akuru</option>
+									<option value="dives-akuru"> - Noto Serif Dives Akuru</option>
+								<option value="dogra">Noto Dogra</option>
+									<option value="dogra"> - Noto Serif Dogra</option>
+								<option value="duployan">Noto Duployan</option>
+									<option value="duployan"> - Noto Sans Duployan</option>
+								<option value="egyptian-hieroglyphs">Noto Egyptian Hieroglyphs</option>
+									<option value="egyptian-hieroglyphs"> - Noto Sans Egyptian Hieroglyphs</option>
+								<option value="elbasan">Noto Elbasan</option>
+									<option value="elbasan"> - Noto Sans Elbasan</option>
+								<option value="elymaic">Noto Elymaic</option>
+									<option value="elymaic"> - Noto Sans Elymaic</option>
+								<option value="ethiopic">Noto Ethiopic</option>
+									<option value="ethiopic"> - Noto Sans Ethiopic</option>
+									<option value="ethiopic"> - Noto Serif Ethiopic</option>
+								<option value="georgian">Noto Georgian</option>
+									<option value="georgian"> - Noto Sans Georgian</option>
+									<option value="georgian"> - Noto Serif Georgian</option>
+								<option value="glagolitic">Noto Glagolitic</option>
+									<option value="glagolitic"> - Noto Sans Glagolitic</option>
+								<option value="gothic">Noto Gothic</option>
+									<option value="gothic"> - Noto Sans Gothic</option>
+								<option value="grantha">Noto Grantha</option>
+									<option value="grantha"> - Noto Sans Grantha</option>
+									<option value="grantha"> - Noto Serif Grantha</option>
+								<option value="gujarati">Noto Gujarati</option>
+									<option value="gujarati"> - Noto Sans Gujarati</option>
+									<option value="gujarati"> - Noto Serif Gujarati</option>
+								<option value="gunjala-gondi">Noto Gunjala Gondi</option>
+									<option value="gunjala-gondi"> - Noto Sans Gunjala Gondi</option>
+								<option value="gurmukhi">Noto Gurmukhi</option>
+									<option value="gurmukhi"> - Noto Sans Gurmukhi</option>
+									<option value="gurmukhi"> - Noto Serif Gurmukhi</option>
+								<option value="hanifi-rohingya">Noto Hanifi Rohingya</option>
+									<option value="hanifi-rohingya"> - Noto Sans Hanifi Rohingya</option>
+								<option value="hanunoo">Noto Hanunoo</option>
+									<option value="hanunoo"> - Noto Sans Hanunoo</option>
+								<option value="hatran">Noto Hatran</option>
+									<option value="hatran"> - Noto Sans Hatran</option>
+								<option value="hebrew">Noto Hebrew</option>
+									<option value="hebrew"> - Noto Rashi Hebrew</option>
+									<option value="hebrew"> - Noto Sans Hebrew</option>
+									<option value="hebrew"> - Noto Serif Hebrew</option>
+								<option value="imperial-aramaic">Noto Imperial Aramaic</option>
+									<option value="imperial-aramaic"> - Noto Sans Imperial Aramaic</option>
+								<option value="indic-siyaq-numbers">Noto Indic Siyaq Numbers</option>
+									<option value="indic-siyaq-numbers"> - Noto Sans Indic Siyaq Numbers</option>
+								<option value="inscriptional-pahlavi">Noto Inscriptional Pahlavi</option>
+									<option value="inscriptional-pahlavi"> - Noto Sans Inscriptional Pahlavi</option>
+								<option value="inscriptional-parthian">Noto Inscriptional Parthian</option>
+									<option value="inscriptional-parthian"> - Noto Sans Inscriptional Parthian</option>
+								<option value="javanese">Noto Javanese</option>
+									<option value="javanese"> - Noto Sans Javanese</option>
+								<option value="kaithi">Noto Kaithi</option>
+									<option value="kaithi"> - Noto Sans Kaithi</option>
+								<option value="kannada">Noto Kannada</option>
+									<option value="kannada"> - Noto Sans Kannada</option>
+									<option value="kannada"> - Noto Serif Kannada</option>
+								<option value="kawi">Noto Sans Kawi</option>
+								<option value="kayah-li">Noto Kayah Li</option>
+									<option value="kayah-li"> - Noto Sans Kayah Li</option>
+								<option value="kharoshthi">Noto Kharoshthi</option>
+									<option value="kharoshthi"> - Noto Sans Kharoshthi</option>
+								<option value="khitan-small-script">Noto Khitan Small Script</option>
+									<option value="khitan-small-script"> - Noto Fangsong KSSRotated</option>
+									<option value="khitan-small-script"> - Noto Fangsong KSSVertical</option>
+									<option value="khitan-small-script"> - Noto Serif Khitan Small Script</option>
+								<option value="khmer">Noto Khmer</option>
+									<option value="khmer"> - Noto Sans Khmer</option>
+									<option value="khmer"> - Noto Serif Khmer</option>
+								<option value="khojki">Noto Khojki</option>
+									<option value="khojki"> - Noto Sans Khojki</option>
+									<option value="khojki"> - Noto Serif Khojki</option>
+								<option value="khudawadi">Noto Khudawadi</option>
+									<option value="khudawadi"> - Noto Sans Khudawadi</option>
+								<option value="lao">Noto Lao</option>
+									<option value="lao"> - Noto Sans Lao</option>
+									<option value="lao"> - Noto Sans Lao Looped</option>
+									<option value="lao"> - Noto Serif Lao</option>
+								<option value="latin-greek-cyrillic">Noto Latin,  Greek,  Cyrillic</option>
+									<option value="latin-greek-cyrillic"> - Noto Sans</option>
+									<option value="latin-greek-cyrillic"> - Noto Sans Mono</option>
+									<option value="latin-greek-cyrillic"> - Noto Serif</option>
+									<option value="latin-greek-cyrillic"> - Noto Serif Display</option>
+								<option value="lepcha">Noto Lepcha</option>
+									<option value="lepcha"> - Noto Sans Lepcha</option>
+								<option value="limbu">Noto Limbu</option>
+									<option value="limbu"> - Noto Sans Limbu</option>
+								<option value="linear-a">Noto Linear A</option>
+									<option value="linear-a"> - Noto Sans Linear A</option>
+								<option value="linear-b">Noto Linear B</option>
+									<option value="linear-b"> - Noto Sans Linear B</option>
+								<option value="lisu">Noto Lisu</option>
+									<option value="lisu"> - Noto Sans Lisu</option>
+								<option value="lycian">Noto Lycian</option>
+									<option value="lycian"> - Noto Sans Lycian</option>
+								<option value="lydian">Noto Lydian</option>
+									<option value="lydian"> - Noto Sans Lydian</option>
+								<option value="mahajani">Noto Mahajani</option>
+									<option value="mahajani"> - Noto Sans Mahajani</option>
+								<option value="makasar">Noto Makasar</option>
+									<option value="makasar"> - Noto Serif Makasar</option>
+								<option value="malayalam">Noto Malayalam</option>
+									<option value="malayalam"> - Noto Sans Malayalam</option>
+									<option value="malayalam"> - Noto Serif Malayalam</option>
+								<option value="mandaic">Noto Mandaic</option>
+									<option value="mandaic"> - Noto Sans Mandaic</option>
+								<option value="manichaean">Noto Manichaean</option>
+									<option value="manichaean"> - Noto Sans Manichaean</option>
+								<option value="marchen">Noto Marchen</option>
+									<option value="marchen"> - Noto Sans Marchen</option>
+								<option value="masaram-gondi">Noto Masaram Gondi</option>
+									<option value="masaram-gondi"> - Noto Sans Masaram Gondi</option>
+								<option value="math">Noto Math</option>
+								<option value="mayan-numerals">Noto Mayan Numerals</option>
+									<option value="mayan-numerals"> - Noto Sans Mayan Numerals</option>
+								<option value="medefaidrin">Noto Medefaidrin</option>
+									<option value="medefaidrin"> - Noto Sans Medefaidrin</option>
+								<option value="meetei-mayek">Noto Meetei Mayek</option>
+									<option value="meetei-mayek"> - Noto Sans Meetei Mayek</option>
+								<option value="mende-kikakui">Noto Mende Kikakui</option>
+									<option value="mende-kikakui"> - Noto Sans Mende Kikakui</option>
+								<option value="meroitic">Noto Meroitic</option>
+									<option value="meroitic"> - Noto Sans Meroitic</option>
+								<option value="miao">Noto Miao</option>
+									<option value="miao"> - Noto Sans Miao</option>
+								<option value="modi">Noto Modi</option>
+									<option value="modi"> - Noto Sans Modi</option>
+								<option value="mongolian">Noto Mongolian</option>
+									<option value="mongolian"> - Noto Sans Mongolian</option>
+								<option value="mro">Noto Mro</option>
+									<option value="mro"> - Noto Sans Mro</option>
+								<option value="multani">Noto Multani</option>
+									<option value="multani"> - Noto Sans Multani</option>
+								<option value="music">Noto Music</option>
+									<option value="music"> - Noto Music</option>
+								<option value="myanmar">Noto Myanmar</option>
+									<option value="myanmar"> - Noto Sans Myanmar</option>
+									<option value="myanmar"> - Noto Serif Myanmar</option>
+								<option value="nabataean">Noto Nabataean</option>
+									<option value="nabataean"> - Noto Sans Nabataean</option>
+								<option value="nag-mundari">Noto Sans Nag Mundari</option>
+								<option value="nandinagari">Noto Nandinagari</option>
+									<option value="nandinagari"> - Noto Sans Nandinagari</option>
+								<option value="nastaliq">Noto Nastaliq</option>
+									<option value="nastaliq"> - Noto Nastaliq Urdu</option>
+								<option value="new-tai-lue">Noto New Tai Lue</option>
+									<option value="new-tai-lue"> - Noto Sans New Tai Lue</option>
+								<option value="newa">Noto Newa</option>
+									<option value="newa"> - Noto Sans Newa</option>
+								<option value="nko">Noto N&#x27; Ko</option>
+									<option value="nko"> - Noto Sans NKo</option>
+								<option value="nushu">Noto Nushu</option>
+									<option value="nushu"> - Noto Sans Nushu</option>
+									<option value="nushu"> - Noto Traditional Nushu</option>
+								<option value="nyiakeng-puachue-hmong">Noto Nyiakeng Puachue Hmong</option>
+									<option value="nyiakeng-puachue-hmong"> - Noto Serif NPHmong</option>
+								<option value="ogham">Noto Ogham</option>
+									<option value="ogham"> - Noto Sans Ogham</option>
+								<option value="ol-chiki">Noto Ol Chiki</option>
+									<option value="ol-chiki"> - Noto Sans Ol Chiki</option>
+								<option value="old-hungarian">Noto Old Hungarian</option>
+									<option value="old-hungarian"> - Noto Sans Old Hungarian</option>
+								<option value="old-hungarian-ui">Noto Old Hungarian Ui</option>
+								<option value="old-italic">Noto Old Italic</option>
+									<option value="old-italic"> - Noto Sans Old Italic</option>
+								<option value="old-north-arabian">Noto Old North Arabian</option>
+									<option value="old-north-arabian"> - Noto Sans Old North Arabian</option>
+								<option value="old-permic">Noto Old Permic</option>
+									<option value="old-permic"> - Noto Sans Old Permic</option>
+								<option value="old-persian">Noto Old Persian</option>
+									<option value="old-persian"> - Noto Sans Old Persian</option>
+								<option value="old-sogdian">Noto Old Sogdian</option>
+									<option value="old-sogdian"> - Noto Sans Old Sogdian</option>
+								<option value="old-south-arabian">Noto Old South Arabian</option>
+									<option value="old-south-arabian"> - Noto Sans Old South Arabian</option>
+								<option value="old-turkic">Noto Old Turkic</option>
+									<option value="old-turkic"> - Noto Sans Old Turkic</option>
+								<option value="old-uyghur">Noto Old Uyghur</option>
+									<option value="old-uyghur"> - Noto Serif Old Uyghur</option>
+								<option value="oriya">Noto Oriya</option>
+									<option value="oriya"> - Noto Sans Oriya</option>
+									<option value="oriya"> - Noto Serif Oriya</option>
+								<option value="osage">Noto Osage</option>
+									<option value="osage"> - Noto Sans Osage</option>
+								<option value="osmanya">Noto Osmanya</option>
+									<option value="osmanya"> - Noto Sans Osmanya</option>
+								<option value="pahawh-hmong">Noto Pahawh Hmong</option>
+									<option value="pahawh-hmong"> - Noto Sans Pahawh Hmong</option>
+								<option value="palmyrene">Noto Palmyrene</option>
+									<option value="palmyrene"> - Noto Sans Palmyrene</option>
+								<option value="pau-cin-hau">Noto Pau Cin Hau</option>
+									<option value="pau-cin-hau"> - Noto Sans Pau Cin Hau</option>
+								<option value="phags-pa">Noto Phags Pa</option>
+									<option value="phags-pa"> - Noto Sans Phags Pa</option>
+								<option value="phoenician">Noto Phoenician</option>
+									<option value="phoenician"> - Noto Sans Phoenician</option>
+								<option value="psalter-pahlavi">Noto Psalter Pahlavi</option>
+									<option value="psalter-pahlavi"> - Noto Sans Psalter Pahlavi</option>
+								<option value="rejang">Noto Rejang</option>
+									<option value="rejang"> - Noto Sans Rejang</option>
+								<option value="runic">Noto Runic</option>
+									<option value="runic"> - Noto Sans Runic</option>
+								<option value="samaritan">Noto Samaritan</option>
+									<option value="samaritan"> - Noto Sans Samaritan</option>
+								<option value="saurashtra">Noto Saurashtra</option>
+									<option value="saurashtra"> - Noto Sans Saurashtra</option>
+								<option value="sharada">Noto Sharada</option>
+									<option value="sharada"> - Noto Sans Sharada</option>
+								<option value="shavian">Noto Shavian</option>
+									<option value="shavian"> - Noto Sans Shavian</option>
+								<option value="siddham">Noto Siddham</option>
+									<option value="siddham"> - Noto Sans Siddham</option>
+								<option value="sign-writing">Noto Sign Writing</option>
+									<option value="sign-writing"> - Noto Sans Sign Writing</option>
+								<option value="sinhala">Noto Sinhala</option>
+									<option value="sinhala"> - Noto Sans Sinhala</option>
+									<option value="sinhala"> - Noto Serif Sinhala</option>
+								<option value="sogdian">Noto Sogdian</option>
+									<option value="sogdian"> - Noto Sans Sogdian</option>
+								<option value="sora-sompeng">Noto Sora Sompeng</option>
+									<option value="sora-sompeng"> - Noto Sans Sora Sompeng</option>
+								<option value="soyombo">Noto Soyombo</option>
+									<option value="soyombo"> - Noto Sans Soyombo</option>
+								<option value="sundanese">Noto Sundanese</option>
+									<option value="sundanese"> - Noto Sans Sundanese</option>
+								<option value="syloti-nagri">Noto Syloti Nagri</option>
+									<option value="syloti-nagri"> - Noto Sans Syloti Nagri</option>
+								<option value="symbols">Noto Symbols</option>
+									<option value="symbols"> - Noto Sans Symbols</option>
+									<option value="symbols"> - Noto Sans Symbols2</option>
+								<option value="syriac">Noto Syriac</option>
+									<option value="syriac"> - Noto Sans Syriac</option>
+									<option value="syriac"> - Noto Sans Syriac Eastern</option>
+									<option value="syriac"> - Noto Sans Syriac Western</option>
+								<option value="tagalog">Noto Tagalog</option>
+									<option value="tagalog"> - Noto Sans Tagalog</option>
+								<option value="tagbanwa">Noto Tagbanwa</option>
+									<option value="tagbanwa"> - Noto Sans Tagbanwa</option>
+								<option value="tai-le">Noto Tai Le</option>
+									<option value="tai-le"> - Noto Sans Tai Le</option>
+								<option value="tai-tham">Noto Tai Tham</option>
+									<option value="tai-tham"> - Noto Sans Tai Tham</option>
+								<option value="tai-viet">Noto Tai Viet</option>
+									<option value="tai-viet"> - Noto Sans Tai Viet</option>
+								<option value="takri">Noto Takri</option>
+									<option value="takri"> - Noto Sans Takri</option>
+								<option value="tamil">Noto Tamil</option>
+									<option value="tamil"> - Noto Sans Tamil</option>
+									<option value="tamil"> - Noto Sans Tamil Supplement</option>
+									<option value="tamil"> - Noto Serif Tamil</option>
+								<option value="tangsa">Noto Tangsa</option>
+									<option value="tangsa"> - Noto Sans Tangsa</option>
+								<option value="tangut">Noto Tangut</option>
+									<option value="tangut"> - Noto Serif Tangut</option>
+								<option value="telugu">Noto Telugu</option>
+									<option value="telugu"> - Noto Sans Telugu</option>
+									<option value="telugu"> - Noto Serif Telugu</option>
+								<option value="test">Noto Test (ONLY FOR TESTING)</option>
+									<option value="test"> - Noto Sans Test</option>
+									<option value="test"> - Noto Serif Test</option>
+								<option value="thaana">Noto Thaana</option>
+									<option value="thaana"> - Noto Sans Thaana</option>
+								<option value="thai">Noto Thai</option>
+									<option value="thai"> - Noto Looped Thai</option>
+									<option value="thai"> - Noto Sans Thai</option>
+									<option value="thai"> - Noto Sans Thai Looped</option>
+									<option value="thai"> - Noto Serif Thai</option>
+								<option value="tibetan">Noto Tibetan</option>
+									<option value="tibetan"> - Noto Serif Tibetan</option>
+								<option value="tifinagh">Noto Tifinagh</option>
+									<option value="tifinagh"> - Noto Sans Tifinagh</option>
+								<option value="tirhuta">Noto Tirhuta</option>
+									<option value="tirhuta"> - Noto Sans Tirhuta</option>
+								<option value="toto">Noto Toto</option>
+									<option value="toto"> - Noto Serif Toto</option>
+								<option value="ugaritic">Noto Ugaritic</option>
+									<option value="ugaritic"> - Noto Sans Ugaritic</option>
+								<option value="vai">Noto Vai</option>
+									<option value="vai"> - Noto Sans Vai</option>
+								<option value="vithkuqi">Noto Vithkuqi</option>
+									<option value="vithkuqi"> - Noto Sans Vithkuqi</option>
+									<option value="vithkuqi"> - Noto Serif Vithkuqi</option>
+								<option value="wancho">Noto Wancho</option>
+									<option value="wancho"> - Noto Sans Wancho</option>
+								<option value="warang-citi">Noto Warang Citi</option>
+									<option value="warang-citi"> - Noto Sans Warang Citi</option>
+								<option value="yezidi">Noto Yezidi</option>
+									<option value="yezidi"> - Noto Serif Yezidi</option>
+								<option value="yi">Noto Yi</option>
+									<option value="yi"> - Noto Sans Yi</option>
+								<option value="zanabazar-square">Noto Zanabazar Square</option>
+									<option value="zanabazar-square"> - Noto Sans Zanabazar Square</option>
+							</select>
+						</ul>
+
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+    </body>
+</html>

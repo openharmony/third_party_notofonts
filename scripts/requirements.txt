@@ -1,0 +1,6 @@
+pygit2
+gftools
+pybars3
+pygithub
+matplotlib
+humanize
