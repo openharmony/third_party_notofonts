@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Noto Dashboard</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+			crossorigin="anonymous"
+		></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <style>
+      	[data-toggle="collapse"] .material-icons:before {   
+  content: "\e5d6";
+}
+
+[data-toggle="collapse"].collapsed .material-icons:before {
+  content: "\e5d7";
+}
+.material-icons { display:inline-block; vertical-align:middle; text-decoration: none !important;}
+h6 .material-icons { display:inline-flex; vertical-align: top; font-size:1.1rem; }
+.badge .material-icons { display:inline-flex; vertical-align: top; font-size:0.9rem; }
+.tooltip .tooltip-inner { text-align: left; padding:10px; }
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 4px;
+}
+.dropdown-menu {         
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.up-to-date-false { background: #fff0f0; }
+.up-to-date-true { background: #f0fff0; }
+html { scroll-padding-top: 60px; }
+body { padding-top: 4.5rem }
+.title { display:inline-block; position:relative; left: -20px;	}
+.title a {font-size: 0.8em; }
+      </style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container-fluid">
+				<div class="order-0 mr-auto">
+					<a class="navbar-brand" href="#"> Noto Dashboard </a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item active">
+			        <a class="nav-link" href="/">Dashboard</a>
+			      </li>
+						<li class="nav-item">
+			        <a class="nav-link" href="/overview">Overview</a>
+			      </li>
+						<li class="nav-item">
+			        <a class="nav-link" href="/analytics.html">Analytics</a>
+			      </li>
+			    </ul>
+					<ul class="navbar-nav ml-auto">
+<a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Scripts</a>
+
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="scriptsDropdown">
+ <div class="container" style="max-width:100%">
+ <div class="row p-1">
+{{#each results}}
+	<div class="col-2 p-1"><a href="#{{@key}}" class="text-body">{{denoto title}}</a></div>
+{{/each}}
+</div>
+</div>
+</div>
+</ul>
+</div>
+</div>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<main role="main" class="container">
+
+			<div class="jumbotron pt-2 pb-2">
+			  <h1 class="display-4">Noto Dashboard</h1>
+			  <p class="lead">
+			  	Welcome to the Noto dashboard. Noto is a collection of high-quality fonts with multiple weights and widths in sans, serif, mono, and other styles, in more than 1,000 languages and over 150 writing systems.
+			  </p>
+			  <p> At this site, you can:</p>
+					<ul>
+						<li>Download the latest versions of individual font files or font family releases.</li>
+						<li>See the reported issues in Noto fonts and report new issues.</li>
+			  	</ul>
+			  <p>
+			  	If you are a software distributor looking to download and package the entire Noto collection, you can either git clone or download <a href="https://github.com/notofonts/notofonts.github.io">this repository</a>.
+			  </p>
+			</div>
+
+			{{#each results}}
+			<div id="{{@key}}">
+				<h3 class="title"><a href="#{{@key}}" class="text-secondary">#</a> {{title}}</h3>
+				<ul>
+					<li>
+						<a href="{{gh_url}}">Development builds</a>
+						<img
+							src="https://img.shields.io/github/actions/workflow/status/notofonts/{{@key}}/build.yaml?label=%20&style=plastic"
+						/>
+					</li>
+					<li><a href="{{repo_url}}">Source repository</a></li>
+					<li>
+						<a href="{{repo_url}}/issues/new/choose"
+							>Report an issue in this font</a
+						>
+					</li>
+				</ul>
+
+				<div class="accordion">
+					{{#if issues}}
+					<div class="card">
+						<div class="card-header">
+							<h5 class="mb-0">
+								<button
+									class="btn btn-link  collapsed"
+									data-toggle="collapse"
+									data-target="#{{@key}} .issuescard"
+								>
+									<span class="material-icons"></span>
+									Known Issues ({{issue_count}})
+								</button>
+							</h5>
+						</div>
+						<div class="collapse issuescard">
+							<div class="card-body">
+								<ul>
+									{{#each issues}}
+									<li>{{title}} (<a href="{{url}}">#{{number}}</a>)</li>
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+					</div>
+					{{/if}}
+
+					{{#if has_releases}}
+					<div class="card">
+						<div class="card-header">
+							<h5 class="mb-0">
+								<button
+									class="btn btn-link collapsed"
+									data-toggle="collapse"
+									data-target="#{{@key}} .releasescard"
+								>
+									<span class="material-icons"></span>
+									Releases
+								</button>
+							</h5>
+						</div>
+						<div class="collapse releasescard">
+							<div class="card-body">
+								{{#each families}} {{#if latest_release}}
+								<h6>
+									{{@key}}
+									<a href="{{latest_release.url}}"
+										>{{latest_release.version}}</a
+									>
+									{{#if third_party_versions}}
+									<span class="ml-5 font-weight-normal">{{#each third_party_versions}}
+										{{{icon}}} <span class="up-to-date-{{up_to_date}}">{{{version}}}</span>
+									{{/each}}
+									</span>
+									{{/if}}
+
+								</h6>
+								<pre>{{latest_release.notes}}</pre>
+								
+								{{/if}} {{/each}}
+							</div>
+						</div>
+					</div>
+					{{else}}
+					<div class="card">
+						<div class="card-header">
+							<h5 class="mb-0">
+								<button
+									class="btn btn-link text-decoration-none"
+								>
+									No Releases
+								</button>
+							</h5>
+						</div>
+					</div>
+					{{/if}}
+
+					<div class="card">
+						<div class="card-header">
+							<h5 class="mb-0">
+								<button
+									class="btn btn-link"
+									data-toggle="collapse"
+									data-target="#{{@key}} .fontscard"
+								>
+									<span class="material-icons"></span>
+									Latest fonts
+								</button>
+							</h5>
+						</div>
+						<div class="collapse show fontscard">
+							<div class="card-body">
+								{{#each families}}
+								{{#gt1 ../families_count}}
+								<h5>{{@key}}</h5>
+								{{/gt1}}
+
+								<div class="row">
+									<div class="col">
+										<h6>Unhinted
+											<i class="material-icons" data-toggle="tooltip" data-placement="right" title="Unhinted builds are smaller files without hinting information, suitable for use on high-resolution displays. These builds only cover the Unicode codepoints of the family in question.">help</i>
+										</h6>
+
+										<ul class="list-unstyled">
+											{{#each files.unhinted}}
+											<li class="text-nowrap">
+												<a
+													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/{{this}}"
+													>{{basename this}}</a
+												> <span class="text-nowrap">({{sizeof this}})</span>
+												{{#ifslim this}}<span class="badge badge-pill badge-info">Slim VF<i class="material-icons" data-toggle="tooltip" data-placement="right" title="Slim variable fonts contain a limited subset of the variable font's design space, covering only weights from Regular to Bold, and Regular width. They can be used where expression is required but disk space is at a premium.">help</i></span></h6> {{/ifslim}}
+											</li>
+											{{/each}}
+										</ul>
+									</div>
+									<div class="col">
+										<h6>Hinted
+											<i class="material-icons" data-toggle="tooltip" data-placement="right" title="Hinted builds contain hinting information, and are suitable for use in all environments, including lower-resolution displays and print uses. These builds only cover the Unicode codepoints of the family in question.">help</i></h6>
+										<ul class="list-unstyled">
+											{{#each files.hinted}}
+											<li class="text-nowrap">
+												<a
+													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/{{this}}"
+													>{{basename this}}</a
+												> <span class="text-nowrap">({{sizeof this}})</span>
+												{{#ifslim this}}<span class="badge badge-pill badge-info">Slim VF<i class="material-icons" data-toggle="tooltip" data-placement="right" title="Slim variable fonts contain a limited subset of the variable font's design space, covering only weights from Regular to Bold, and Regular width. They can be used where expression is required but disk space is at a premium.">help</i></span></h6> {{/ifslim}}
+											</li>
+											{{/each}}
+										</ul>
+									</div>
+									<div class="col">
+										<h6>Full
+											<i class="material-icons" data-toggle="tooltip" data-placement="right" title="Full builds contain hinting information, and also contain basic Latin and punctuation Unicode codepoints.">help</i></h6>
+										<ul class="list-unstyled">
+											{{#each files.full}}
+											<li class="text-nowrap">
+												<a
+													href="https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io/{{this}}"
+													>{{basename this}}</a
+												> <span class="text-nowrap">({{sizeof this}})</span>
+												{{#ifslim this}}<span class="badge badge-pill badge-info">Slim VF<i class="material-icons" data-toggle="tooltip" data-placement="right" title="Slim variable fonts contain a limited subset of the variable font's design space, covering only weights from Regular to Bold, and Regular width. They can be used where expression is required but disk space is at a premium.">help</i></span></h6> {{/ifslim}}
+												</li>
+											</li>
+											{{/each}}
+										</ul>
+									</div>
+								</div>
+								{{/each}}
+							</div>
+							<!-- card-body -->
+						</div>
+						<!-- fontscard -->
+					</div>
+					<!-- card -->
+				</div>
+				<!-- accordion -->
+				<hr />
+			</div>
+			<!-- @key -->
+			{{/each}}
+		</main>
+		<footer class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+			<p class="navbar-text">Get this information as a <a href="noto.json">JSON file</a>.
+				Report an <a href="https://github.com/notofonts/notofonts.github.io/issues/new">issue in this web page</a>. (Use <a href="/reporter.html"> this page</a> to report an issue in a font.)
+			</p>
+		</div>
+		</footer>
+		<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+	</body>
+</html>
