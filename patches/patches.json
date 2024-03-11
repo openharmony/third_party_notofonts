@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "project":"global_system_resources",
+            "path":"base/global/system_resources",
+            "pr_url":"https://gitee.com/openharmony/global_system_resources/pulls/670"
+        }
+    ]
+}

@@ -1,0 +1,155 @@
+#Copyright (c) 2024 Huawei Device Co., Ltd.
+#Licensed under the Apache License, Version 2.0 (the "License");
+#you may not use this file except in compliance with the License.
+#You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+#Unless required by applicable law or agreed to in writing, software
+#distributed under the License is distributed on an "AS IS" BASIS,
+#WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#See the License for the specific language governing permissions and
+#limitations under the License.
+
+import("//build/ohos.gni")
+
+ohos_prebuilt_etc("NotoSans") {
+  source = "fonts/NotoSans/googlefonts/variable-ttf/NotoSans[wdth,wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+ohos_prebuilt_etc("NotoSansSymbols") {
+  source = "fonts/NotoSansSymbols/googlefonts/variable-ttf/NotoSansSymbols[wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+ohos_prebuilt_etc("NotoSansMyanmar") {
+  source = "fonts/NotoSansMyanmar/googlefonts/variable-ttf/NotoSansMyanmar[wdth,wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+ohos_prebuilt_etc("NotoSansThai") {
+  source = "fonts/NotoSansThai/googlefonts/variable-ttf/NotoSansThai[wdth,wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+ohos_prebuilt_etc("NotoSansLao") {
+  source = "fonts/NotoSansLao/googlefonts/variable-ttf/NotoSansLao[wdth,wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+ohos_prebuilt_etc("NotoSansKhmer") {
+  source = "fonts/NotoSansKhmer/googlefonts/variable-ttf/NotoSansKhmer[wdth,wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+ohos_prebuilt_etc("NotoSansHebrew") {
+  source = "fonts/NotoSansHebrew/googlefonts/variable-ttf/NotoSansHebrew[wdth,wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+ohos_prebuilt_etc("NotoSansGeorgian") {
+  source = "fonts/NotoSansGeorgian/googlefonts/variable-ttf/NotoSansGeorgian[wdth,wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+ohos_prebuilt_etc("NotoSansSinhala") {
+  source = "fonts/NotoSansSinhala/googlefonts/variable-ttf/NotoSansSinhala[wdth,wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+ohos_prebuilt_etc("NotoSansDevanagari") {
+  source = "fonts/NotoSansDevanagari/googlefonts/variable-ttf/NotoSansDevanagari[wdth,wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+ohos_prebuilt_etc("NotoSansEthiopic") {
+  source = "fonts/NotoSansEthiopic/googlefonts/variable-ttf/NotoSansEthiopic[wdth,wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+ohos_prebuilt_etc("NotoSansTelugu") {
+  source = "fonts/NotoSansTelugu/googlefonts/variable-ttf/NotoSansTelugu[wdth,wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+ohos_prebuilt_etc("NotoSansTamil") {
+  source = "fonts/NotoSansTamil/googlefonts/variable-ttf/NotoSansTamil[wdth,wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+ohos_prebuilt_etc("NotoSansGujarati") {
+  source = "fonts/NotoSansGujarati/googlefonts/variable-ttf/NotoSansGujarati[wdth,wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+ohos_prebuilt_etc("NotoSansKannada") {
+  source = "fonts/NotoSansKannada/googlefonts/variable-ttf/NotoSansKannada[wdth,wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+ohos_prebuilt_etc("NotoSansMalayalam") {
+  source = "fonts/NotoSansMalayalam/googlefonts/variable-ttf/NotoSansMalayalam[wdth,wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+ohos_prebuilt_etc("NotoSansBengali") {
+  source = "fonts/NotoSansBengali/googlefonts/variable-ttf/NotoSansBengali[wdth,wght].ttf"
+  module_install_dir = "fonts"
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
+
+group("fonts_notofonts") {
+  deps = [
+    ":NotoSans",
+    ":NotoSansBengali",
+    ":NotoSansDevanagari",
+    ":NotoSansEthiopic",
+    ":NotoSansGeorgian",
+    ":NotoSansGujarati",
+    ":NotoSansHebrew",
+    ":NotoSansKannada",
+    ":NotoSansKhmer",
+    ":NotoSansLao",
+    ":NotoSansMalayalam",
+    ":NotoSansMyanmar",
+    ":NotoSansSinhala",
+    ":NotoSansSymbols",
+    ":NotoSansTamil",
+    ":NotoSansTelugu",
+    ":NotoSansThai",
+  ]
+}

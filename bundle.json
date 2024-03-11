@@ -1,0 +1,31 @@
+{
+    "name": "@ohos/noto-fonts",
+    "description": "font resources",
+    "version": "4.1",
+    "license": "Apache License V2.0",
+    "publishAs": "code-segment",
+    "segment": {
+        "destPath": "third_party/notofonts"
+    },
+    "dirs": {},
+    "scripts": {},
+    "licensePath": "LICENSE",
+    "component": {
+        "name": "notofonts",
+        "subsystem": "thirdparty",
+        "syscap": [],
+        "features": [],
+        "adapted_system_type": [ "mini", "small", "standard" ],
+        "rom": "0",
+        "ram": "0",
+        "deps": {
+            "components": [],
+            "third_party": []
+        },
+        "build": {
+            "sub_component": [],
+            "inner_kits": [],
+            "test": []
+        }
+    }
+}
