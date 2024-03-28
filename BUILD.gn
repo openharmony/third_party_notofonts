@@ -12,144 +12,37 @@
 #limitations under the License.
 
 import("//build/ohos.gni")
+import("fonts_config.gni")
 
-ohos_prebuilt_etc("NotoSans") {
-  source = "fonts/NotoSans/googlefonts/variable-ttf/NotoSans[wdth,wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
-}
+dep_list = []
 
-ohos_prebuilt_etc("NotoSansSymbols") {
-  source = "fonts/NotoSansSymbols/googlefonts/variable-ttf/NotoSansSymbols[wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
-}
-
-ohos_prebuilt_etc("NotoSansMyanmar") {
-  source = "fonts/NotoSansMyanmar/googlefonts/variable-ttf/NotoSansMyanmar[wdth,wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
-}
-
-ohos_prebuilt_etc("NotoSansThai") {
-  source = "fonts/NotoSansThai/googlefonts/variable-ttf/NotoSansThai[wdth,wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
-}
-
-ohos_prebuilt_etc("NotoSansLao") {
-  source = "fonts/NotoSansLao/googlefonts/variable-ttf/NotoSansLao[wdth,wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
-}
-
-ohos_prebuilt_etc("NotoSansKhmer") {
-  source = "fonts/NotoSansKhmer/googlefonts/variable-ttf/NotoSansKhmer[wdth,wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
-}
-
-ohos_prebuilt_etc("NotoSansHebrew") {
-  source = "fonts/NotoSansHebrew/googlefonts/variable-ttf/NotoSansHebrew[wdth,wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
-}
-
-ohos_prebuilt_etc("NotoSansGeorgian") {
-  source = "fonts/NotoSansGeorgian/googlefonts/variable-ttf/NotoSansGeorgian[wdth,wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
-}
-
-ohos_prebuilt_etc("NotoSansSinhala") {
-  source = "fonts/NotoSansSinhala/googlefonts/variable-ttf/NotoSansSinhala[wdth,wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
-}
-
-ohos_prebuilt_etc("NotoSansDevanagari") {
-  source = "fonts/NotoSansDevanagari/googlefonts/variable-ttf/NotoSansDevanagari[wdth,wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
-}
-
-ohos_prebuilt_etc("NotoSansEthiopic") {
-  source = "fonts/NotoSansEthiopic/googlefonts/variable-ttf/NotoSansEthiopic[wdth,wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
-}
-
-ohos_prebuilt_etc("NotoSansTelugu") {
-  source = "fonts/NotoSansTelugu/googlefonts/variable-ttf/NotoSansTelugu[wdth,wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
-}
-
-ohos_prebuilt_etc("NotoSansTamil") {
-  source = "fonts/NotoSansTamil/googlefonts/variable-ttf/NotoSansTamil[wdth,wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
-}
-
-ohos_prebuilt_etc("NotoSansGujarati") {
-  source = "fonts/NotoSansGujarati/googlefonts/variable-ttf/NotoSansGujarati[wdth,wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
-}
-
-ohos_prebuilt_etc("NotoSansKannada") {
-  source = "fonts/NotoSansKannada/googlefonts/variable-ttf/NotoSansKannada[wdth,wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
-}
-
-ohos_prebuilt_etc("NotoSansMalayalam") {
-  source = "fonts/NotoSansMalayalam/googlefonts/variable-ttf/NotoSansMalayalam[wdth,wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
-}
-
-ohos_prebuilt_etc("NotoSansBengali") {
-  source = "fonts/NotoSansBengali/googlefonts/variable-ttf/NotoSansBengali[wdth,wght].ttf"
-  module_install_dir = "fonts"
-  subsystem_name = "thirdparty"
-  part_name = "notofonts"
+foreach(font, fonts_list) {
+  font_name = font.font_name
+  ohos_prebuilt_etc(font_name) {
+    source = font.font_path
+    module_install_dir = "fonts"
+    subsystem_name = "thirdparty"
+    part_name = "notofonts"
+  }
+  dep_list += [ font_name ]
 }
 
 group("fonts_notofonts") {
-  deps = [
-    ":NotoSans",
-    ":NotoSansBengali",
-    ":NotoSansDevanagari",
-    ":NotoSansEthiopic",
-    ":NotoSansGeorgian",
-    ":NotoSansGujarati",
-    ":NotoSansHebrew",
-    ":NotoSansKannada",
-    ":NotoSansKhmer",
-    ":NotoSansLao",
-    ":NotoSansMalayalam",
-    ":NotoSansMyanmar",
-    ":NotoSansSinhala",
-    ":NotoSansSymbols",
-    ":NotoSansTamil",
-    ":NotoSansTelugu",
-    ":NotoSansThai",
-  ]
+  deps = []
+  foreach(dep, dep_list) {
+    deps += [ ":${dep}" ]
+  }
+}
+
+ohos_copy("copy_preview_fonts_notofonts") {
+  sources = []
+  foreach(font, fonts_list) {
+    sources += [ font.font_path ]
+  }
+  outputs =
+      [ target_out_dir + "/previewer/common/bin/fonts/{{source_file_part}}" ]
+  module_source_dir = target_out_dir + "/previewer/common/bin/"
+  module_install_name = ""
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
 }
