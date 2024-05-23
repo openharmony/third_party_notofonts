@@ -11,7 +11,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-fonts_list = [
+notofonts_fonts_list = [
   {
     font_name = "NotoSansEthiopic"
     font_path = "fonts/NotoSansEthiopic/googlefonts/variable-ttf/NotoSansEthiopic[wdth,wght].ttf"
