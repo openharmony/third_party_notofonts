@@ -16,7 +16,7 @@ import("fonts_config.gni")
 
 dep_list = []
 
-foreach(font, fonts_list) {
+foreach(font, notofonts_fonts_list) {
   font_name = font.font_name
   ohos_prebuilt_etc(font_name) {
     source = font.font_path
@@ -36,7 +36,7 @@ group("fonts_notofonts") {
 
 ohos_copy("copy_preview_fonts_notofonts") {
   sources = []
-  foreach(font, fonts_list) {
+  foreach(font, notofonts_fonts_list) {
     sources += [ font.font_path ]
   }
   outputs =
