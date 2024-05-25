@@ -19,6 +19,9 @@ dep_list = []
 foreach(font, notofonts_fonts_list) {
   font_name = font.font_name
   ohos_prebuilt_etc(font_name) {
+    if (font_name == "NotoSans") {
+      symlink_target_name = [ "Roboto-Regular.ttf" ]
+    }
     source = font.font_path
     module_install_dir = "fonts"
     subsystem_name = "thirdparty"
