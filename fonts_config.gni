@@ -807,4 +807,8 @@ notofonts_fonts_list = [
     font_path =
         "fonts/NotoSans/googlefonts/variable-ttf/NotoSans[wdth,wght].ttf"
   },
+  {
+    font_name = "NotoSansMath"
+    font_path = "fonts/NotoSansMath/full/ttf/NotoSansMath-Regular.ttf"
+  },
 ]
