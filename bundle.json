@@ -23,7 +23,9 @@
             "third_party": []
         },
         "build": {
-            "sub_component": [],
+            "sub_component": [
+                "//third_party/notofonts:fonts_notofonts"
+            ],
             "inner_kits": [],
             "test": []
         }
