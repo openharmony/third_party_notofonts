@@ -17,17 +17,29 @@ import("fonts_config.gni")
 dep_list = []
 
 foreach(font, notofonts_fonts_list) {
-  font_name = font.font_name
-  ohos_prebuilt_etc(font_name) {
-    if (font_name == "NotoSans") {
-      symlink_target_name = [ "Roboto-Regular.ttf" ]
+  isLoadFont = false
+  foreach(device, font.support_devices) {
+    if (notofonts_font_feature_product == device) {
+      isLoadFont = true
     }
-    source = font.font_path
-    module_install_dir = "fonts"
-    subsystem_name = "thirdparty"
-    part_name = "notofonts"
   }
-  dep_list += [ font_name ]
+
+  if (isLoadFont) {
+    font_name = font.font_name
+    ohos_prebuilt_etc(font_name) {
+      if (font_name == "NotoSans") {
+        symlink_target_name = [ "Roboto-Regular.ttf" ]
+      }
+      source = font.font_path
+      if (font.alias_name != "") {
+        output = font.alias_name
+      }
+      module_install_dir = "fonts"
+      subsystem_name = "thirdparty"
+      part_name = "notofonts"
+    }
+    dep_list += [ font_name ]
+  }
 }
 
 group("fonts_notofonts") {
