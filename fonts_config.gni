@@ -31,25 +31,37 @@ notofonts_fonts_list = [
   {
     font_name = "NotoSansHebrew"
     font_path = "fonts/NotoSansHebrew/googlefonts/variable-ttf/NotoSansHebrew[wdth,wght].ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
     font_name = "NotoSerifHebrew"
     font_path = "fonts/NotoSerifHebrew/googlefonts/variable-ttf/NotoSerifHebrew[wdth,wght].ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
     font_name = "NotoSansThai"
     font_path = "fonts/NotoSansThai/googlefonts/variable-ttf/NotoSansThai[wdth,wght].ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
     font_name = "NotoSerifThai"
     font_path = "fonts/NotoSerifThai/googlefonts/variable-ttf/NotoSerifThai[wdth,wght].ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
@@ -67,13 +79,19 @@ notofonts_fonts_list = [
   {
     font_name = "NotoSansGeorgian"
     font_path = "fonts/NotoSansGeorgian/googlefonts/variable-ttf/NotoSansGeorgian[wdth,wght].ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
     font_name = "NotoSerifGeorgian"
     font_path = "fonts/NotoSerifGeorgian/googlefonts/variable-ttf/NotoSerifGeorgian[wdth,wght].ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
@@ -83,34 +101,56 @@ notofonts_fonts_list = [
     alias_name = ""
   },
   {
+    font_name = "NotoSansDevanagari-Condensed"
+    font_path =
+        "fonts/NotoSansDevanagari/hinted/ttf/NotoSansDevanagari-Condensed.ttf"
+    support_devices = [ "watch" ]
+    alias_name = ""
+  },
+  {
     font_name = "NotoSerifDevanagari"
     font_path = "fonts/NotoSerifDevanagari/googlefonts/variable-ttf/NotoSerifDevanagari[wdth,wght].ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
     font_name = "NotoSansDevanagariUI-Bold"
     font_path =
         "fonts/NotoSansDevanagari/googlefonts/ttf/NotoSansDevanagariUI-Bold.ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
     font_name = "NotoSansDevanagariUI-Medium"
     font_path = "fonts/NotoSansDevanagari/googlefonts/ttf/NotoSansDevanagariUI-Medium.ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
     font_name = "NotoSansDevanagariUI-Regular"
     font_path = "fonts/NotoSansDevanagari/googlefonts/ttf/NotoSansDevanagariUI-Regular.ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
     font_name = "NotoSansDevanagariUI-SemiBold"
     font_path = "fonts/NotoSansDevanagari/googlefonts/ttf/NotoSansDevanagariUI-SemiBold.ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
@@ -258,41 +298,59 @@ notofonts_fonts_list = [
   {
     font_name = "NotoSansBengali"
     font_path = "fonts/NotoSansBengali/googlefonts/variable-ttf/NotoSansBengali[wdth,wght].ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
     font_name = "NotoSerifBengali"
     font_path = "fonts/NotoSerifBengali/googlefonts/variable-ttf/NotoSerifBengali[wdth,wght].ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
     font_name = "NotoSansBengaliUI-Bold"
     font_path =
         "fonts/NotoSansBengali/googlefonts/ttf/NotoSansBengaliUI-Bold.ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
     font_name = "NotoSansBengaliUI-Medium"
     font_path =
         "fonts/NotoSansBengali/googlefonts/ttf/NotoSansBengaliUI-Medium.ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
     font_name = "NotoSansBengaliUI-Regular"
     font_path =
         "fonts/NotoSansBengali/googlefonts/ttf/NotoSansBengaliUI-Regular.ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
     font_name = "NotoSansBengaliUI-SemiBold"
     font_path =
         "fonts/NotoSansBengali/googlefonts/ttf/NotoSansBengaliUI-SemiBold.ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
@@ -423,13 +481,19 @@ notofonts_fonts_list = [
   {
     font_name = "NotoSansKhmer"
     font_path = "fonts/NotoSansKhmer/googlefonts/variable-ttf/NotoSansKhmer[wdth,wght].ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
     font_name = "NotoSerifKhmer"
     font_path = "fonts/NotoSerifKhmer/googlefonts/variable-ttf/NotoSerifKhmer[wdth,wght].ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
@@ -448,13 +512,19 @@ notofonts_fonts_list = [
   {
     font_name = "NotoSansMyanmar"
     font_path = "fonts/NotoSansMyanmar/googlefonts/variable-ttf/NotoSansMyanmar[wdth,wght].ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
     font_name = "NotoSerifMyanmar"
     font_path = "fonts/NotoSerifMyanmar/googlefonts/variable-ttf/NotoSerifMyanmar[wdth,wght].ttf"
-    support_devices = [ "default" ]
+    support_devices = [
+      "default",
+      "watch",
+    ]
     alias_name = ""
   },
   {
