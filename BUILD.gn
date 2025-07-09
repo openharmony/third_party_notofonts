@@ -64,7 +64,7 @@ ohos_copy("copy_preview_fonts_notofonts") {
 
 ohos_copy("copy_preview_fonts_notofonts_ext") {
   sources = []
-  foreach(font, sys_fonts_list) {
+  foreach(font, notofonts_fonts_list) {
     sources += [ font.font_path ]
   }
   outputs =
