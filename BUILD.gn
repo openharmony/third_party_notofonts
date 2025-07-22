@@ -61,3 +61,16 @@ ohos_copy("copy_preview_fonts_notofonts") {
   subsystem_name = "thirdparty"
   part_name = "notofonts"
 }
+
+ohos_copy("copy_preview_fonts_notofonts_ext") {
+  sources = []
+  foreach(font, notofonts_fonts_list) {
+    sources += [ font.font_path ]
+  }
+  outputs =
+      [ target_out_dir + "/previewer/resources/fonts/{{source_file_part}}" ]
+  module_source_dir = target_out_dir + "/previewer/resources"
+  module_install_name = ""
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
+}
