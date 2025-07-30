@@ -2,26 +2,25 @@
  "closed_per_month": {
   "1": 150,
   "2": 90,
-  "3": 100,
-  "4": 59,
-  "5": 52
+  "3": 29
  },
  "open_per_repo": {
-  "ahom": 3,
-  "arabic": 20,
+  "adlam": 6,
+  "ahom": 4,
+  "arabic": 15,
   "armenian": 4,
   "balinese": 9,
   "bamum": 1,
   "bengali": 5,
   "bhaiksuki": 5,
-  "brahmi": 1,
-  "canadian-aboriginal": 1,
+  "brahmi": 6,
+  "canadian-aboriginal": 2,
   "caucasian-albanian": 4,
-  "cham": 1,
+  "cham": 2,
   "chorasmian": 2,
   "coptic": 2,
   "deseret": 1,
-  "devanagari": 7,
+  "devanagari": 5,
   "dives-akuru": 7,
   "dogra": 4,
   "duployan": 1,
@@ -29,87 +28,96 @@
   "elbasan": 2,
   "elymaic": 2,
   "ethiopic": 3,
-  "georgian": 3,
+  "georgian": 2,
   "glagolitic": 3,
   "grantha": 5,
-  "gujarati": 14,
-  "gunjala-gondi": 1,
-  "gurmukhi": 4,
-  "hanifi-rohingya": 1,
-  "hanunoo": 1,
-  "hebrew": 6,
+  "gujarati": 7,
+  "gunjala-gondi": 3,
+  "gurmukhi": 3,
+  "hanifi-rohingya": 2,
+  "hanunoo": 2,
+  "hebrew": 10,
   "inscriptional-pahlavi": 2,
-  "javanese": 3,
+  "inscriptional-parthian": 1,
+  "javanese": 5,
   "kaithi": 6,
-  "kannada": 13,
+  "kannada": 8,
   "kawi": 2,
   "kharoshthi": 1,
   "khitan-small-script": 1,
-  "khmer": 10,
-  "khojki": 1,
+  "khmer": 9,
+  "khojki": 6,
   "khudawadi": 1,
-  "latin-greek-cyrillic": 152,
+  "lao": 3,
+  "latin-greek-cyrillic": 149,
+  "limbu": 2,
+  "linear-a": 1,
   "lydian": 2,
-  "malayalam": 8,
+  "malayalam": 7,
   "mandaic": 3,
   "manichaean": 4,
   "marchen": 2,
-  "math": 10,
+  "math": 19,
   "meetei-mayek": 1,
   "meroitic": 2,
   "miao": 1,
   "modi": 4,
   "mongolian": 6,
-  "multani": 1,
-  "music": 2,
+  "multani": 2,
+  "music": 5,
   "myanmar": 32,
   "nandinagari": 4,
   "nastaliq": 17,
+  "nko": 2,
+  "nushu": 1,
+  "nyiakeng-puachue-hmong": 3,
   "old-hungarian": 3,
   "old-hungarian-ui": 4,
   "old-italic": 1,
-  "old-turkic": 3,
-  "oriya": 4,
-  "ottoman-siyaq-numbers": 2,
-  "pahawh-hmong": 1,
+  "old-sogdian": 3,
+  "old-turkic": 2,
+  "oriya": 2,
+  "pahawh-hmong": 2,
   "phags-pa": 2,
   "psalter-pahlavi": 2,
+  "rejang": 3,
   "saurashtra": 1,
   "sharada": 3,
-  "sign-writing": 1,
-  "sogdian": 1,
+  "siddham": 10,
+  "sign-writing": 6,
+  "sinhala": 1,
   "soyombo": 3,
-  "sundanese": 3,
+  "sundanese": 4,
   "syloti-nagri": 7,
-  "symbols": 7,
-  "syriac": 5,
-  "tagalog": 2,
+  "symbols": 18,
+  "syriac": 6,
+  "tagalog": 3,
   "tai-le": 1,
   "tai-tham": 4,
   "tai-viet": 3,
-  "takri": 1,
-  "tamil": 2,
-  "telugu": 3,
-  "thaana": 1,
-  "thai": 12,
-  "tibetan": 4,
-  "tifinagh": 2,
+  "takri": 2,
+  "tamil": 6,
+  "tangsa": 2,
+  "telugu": 1,
+  "thaana": 2,
+  "thai": 11,
+  "tibetan": 12,
+  "tifinagh": 6,
   "tirhuta": 10,
-  "yezidi": 2
+  "yezidi": 2,
+  "zanabazar-square": 2
  },
  "open_per_tier": {
-  "1": 259,
-  "2": 69,
-  "3": 84,
-  "4": 64,
+  "1": 240,
+  "2": 74,
+  "3": 169,
+  "4": 72,
   "5": 43
  },
  "opened_per_month": {
-  "1": 7,
-  "2": 8,
-  "3": 16,
-  "4": 40,
-  "5": 13
+  "1": 13,
+  "2": 10,
+  "3": 5
  },
  "releases_per_month": {
   "1": [
@@ -176,140 +184,12 @@
   ],
   "3": [
    {
-    "tag": "NotoSerifAhom-v2.006",
-    "url": "https://github.com/notofonts/ahom/releases/tag/NotoSerifAhom-v2.006"
-   },
-   {
-    "tag": "NotoSansDevanagari-v2.004",
-    "url": "https://github.com/notofonts/devanagari/releases/tag/NotoSansDevanagari-v2.004"
-   },
-   {
-    "tag": "NotoSerifDevanagari-v2.004",
-    "url": "https://github.com/notofonts/devanagari/releases/tag/NotoSerifDevanagari-v2.004"
-   },
-   {
-    "tag": "NotoSansGujarati-v2.103",
-    "url": "https://github.com/notofonts/gujarati/releases/tag/NotoSansGujarati-v2.103"
-   },
-   {
-    "tag": "NotoSerifGujarati-v2.103",
-    "url": "https://github.com/notofonts/gujarati/releases/tag/NotoSerifGujarati-v2.103"
-   },
-   {
-    "tag": "NotoSansGurmukhi-v2.004",
-    "url": "https://github.com/notofonts/gurmukhi/releases/tag/NotoSansGurmukhi-v2.004"
-   },
-   {
-    "tag": "NotoSerifGurmukhi-v2.004",
-    "url": "https://github.com/notofonts/gurmukhi/releases/tag/NotoSerifGurmukhi-v2.004"
-   },
-   {
-    "tag": "NotoSansKannada-v2.004",
-    "url": "https://github.com/notofonts/kannada/releases/tag/NotoSansKannada-v2.004"
-   },
-   {
-    "tag": "NotoSerifKannada-v2.004",
-    "url": "https://github.com/notofonts/kannada/releases/tag/NotoSerifKannada-v2.004"
-   },
-   {
-    "tag": "NotoSans-v2.011",
-    "url": "https://github.com/notofonts/latin-greek-cyrillic/releases/tag/NotoSans-v2.011"
-   },
-   {
-    "tag": "NotoSansMono-v2.011",
-    "url": "https://github.com/notofonts/latin-greek-cyrillic/releases/tag/NotoSansMono-v2.011"
-   },
-   {
-    "tag": "NotoSerif-v2.010",
-    "url": "https://github.com/notofonts/latin-greek-cyrillic/releases/tag/NotoSerif-v2.010"
-   },
-   {
-    "tag": "NotoSerifMalayalam-v2.104",
-    "url": "https://github.com/notofonts/malayalam/releases/tag/NotoSerifMalayalam-v2.104"
-   },
-   {
-    "tag": "NotoSansMalayalam-v2.104",
-    "url": "https://github.com/notofonts/malayalam/releases/tag/NotoSansMalayalam-v2.104"
-   },
-   {
-    "tag": "NotoSansMath-v2.539",
-    "url": "https://github.com/notofonts/math/releases/tag/NotoSansMath-v2.539"
-   },
-   {
-    "tag": "NotoSansNagMundari-v1.000",
-    "url": "https://github.com/notofonts/nag-mundari/releases/tag/NotoSansNagMundari-v1.000"
-   },
-   {
-    "tag": "NotoSansOriya-v2.005",
-    "url": "https://github.com/notofonts/oriya/releases/tag/NotoSansOriya-v2.005"
-   },
-   {
-    "tag": "NotoSerifOttomanSiyaq-v1.005",
-    "url": "https://github.com/notofonts/ottoman-siyaq-numbers/releases/tag/NotoSerifOttomanSiyaq-v1.005"
-   },
-   {
-    "tag": "NotoSerifSinhala-v2.007",
-    "url": "https://github.com/notofonts/sinhala/releases/tag/NotoSerifSinhala-v2.007"
-   },
-   {
-    "tag": "NotoSansSymbols2-v2.006",
-    "url": "https://github.com/notofonts/symbols/releases/tag/NotoSansSymbols2-v2.006"
-   },
-   {
-    "tag": "NotoSansTamil-v2.004",
-    "url": "https://github.com/notofonts/tamil/releases/tag/NotoSansTamil-v2.004"
-   },
-   {
-    "tag": "NotoSerifTamil-v2.004",
-    "url": "https://github.com/notofonts/tamil/releases/tag/NotoSerifTamil-v2.004"
-   },
-   {
     "tag": "NotoSerifTelugu-v2.004",
     "url": "https://github.com/notofonts/telugu/releases/tag/NotoSerifTelugu-v2.004"
    },
    {
     "tag": "NotoSansTelugu-v2.004",
     "url": "https://github.com/notofonts/telugu/releases/tag/NotoSansTelugu-v2.004"
-   }
-  ],
-  "4": [
-   {
-    "tag": "NotoSansGujarati-v2.104",
-    "url": "https://github.com/notofonts/gujarati/releases/tag/NotoSansGujarati-v2.104"
-   },
-   {
-    "tag": "NotoSerifGujarati-v2.104",
-    "url": "https://github.com/notofonts/gujarati/releases/tag/NotoSerifGujarati-v2.104"
-   },
-   {
-    "tag": "NotoSansMono-v2.012",
-    "url": "https://github.com/notofonts/latin-greek-cyrillic/releases/tag/NotoSansMono-v2.012"
-   },
-   {
-    "tag": "NotoSerif-v2.011",
-    "url": "https://github.com/notofonts/latin-greek-cyrillic/releases/tag/NotoSerif-v2.011"
-   },
-   {
-    "tag": "NotoSansMono-v2.013",
-    "url": "https://github.com/notofonts/latin-greek-cyrillic/releases/tag/NotoSansMono-v2.013"
-   },
-   {
-    "tag": "NotoSerif-v2.012",
-    "url": "https://github.com/notofonts/latin-greek-cyrillic/releases/tag/NotoSerif-v2.012"
-   }
-  ],
-  "5": [
-   {
-    "tag": "NotoSansCypriot-v2.002",
-    "url": "https://github.com/notofonts/cypriot/releases/tag/NotoSansCypriot-v2.002"
-   },
-   {
-    "tag": "NotoSans-v2.012",
-    "url": "https://github.com/notofonts/latin-greek-cyrillic/releases/tag/NotoSans-v2.012"
-   },
-   {
-    "tag": "NotoSansLinearA-v2.002",
-    "url": "https://github.com/notofonts/linear-a/releases/tag/NotoSansLinearA-v2.002"
    }
   ],
   "6": [
@@ -1256,10 +1136,8 @@
   ]
  },
  "totals_per_month": {
-  "1": 886,
-  "2": 743,
-  "3": 661,
-  "4": 577,
-  "5": 558
+  "1": 839,
+  "2": 702,
+  "3": 622
  }
 }
