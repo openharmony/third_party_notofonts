@@ -42,11 +42,14 @@ foreach(font, notofonts_fonts_list) {
   }
 }
 
-group("fonts_notofonts") {
+ohos_shared_headers("fonts_notofonts") {
+  include_dirs = []
   deps = []
   foreach(dep, dep_list) {
     deps += [ ":${dep}" ]
   }
+  subsystem_name = "thirdparty"
+  part_name = "notofonts"
 }
 
 ohos_copy("copy_preview_fonts_notofonts") {

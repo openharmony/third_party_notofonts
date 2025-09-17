@@ -28,7 +28,16 @@
             "sub_component": [
                 "//third_party/notofonts:fonts_notofonts"
             ],
-            "inner_kits": [],
+            "inner_kits": [
+                {
+                    "name":"//third_party/notofonts:fonts_notofonts",
+                    "header":{
+                        "header_files":[
+                        ],
+                        "header_base":"//third_party/notofonts"
+                    }
+                }
+            ],
             "test": []
         }
     }
