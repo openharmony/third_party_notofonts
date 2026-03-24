@@ -1,0 +1,29 @@
+name: Megamerge
+on:
+  schedule:
+    - cron: '12 3 1 * *'
+
+jobs:
+  megamerge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+            ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      # We need harfbuzz for optimal packing!
+      - name: Install harfbuzz
+        uses: notofonts/install-harfbuzz-action@main
+      - name: Install dependencies
+        run: pip install fontTools gftools uharfbuzz
+      - name: Merge the fonts
+        run: cd megamerge; python3 megamerge.py
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          file_pattern: "megamerge/*ttf"
+          commit_message: "Update megamerged files"
+        name: Commit
