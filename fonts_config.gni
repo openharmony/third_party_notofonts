@@ -1243,4 +1243,13 @@ notofonts_fonts_list = [
     support_devices = [ "default" ]
     alias_name = ""
   },
+  {
+    font_name = "NotoNaskhArabicUI"
+    font_path = "fonts/NotoNaskhArabicUI/googlefonts/variable-ttf/NotoNaskhArabicUI[wght].ttf"
+    support_devices = [
+      "default",
+      "watch",
+    ]
+    alias_name = ""
+  },
 ]
