@@ -999,9 +999,9 @@ notofonts_fonts_list = [
   {
     font_name = "NotoSansPhags-Pa-Regular"
     font_path =
-        "fonts/NotoSansPhagsPa/googlefonts/ttf/NotoSansPhags-Pa-Regular.ttf"
+        "fonts/NotoSansPhagsPa/googlefonts/ttf/NotoSansPhagsPa-Regular.ttf"
     support_devices = [ "default" ]
-    alias_name = ""
+    alias_name = "NotoSansPhags-Pa-Regular.ttf"
   },
   {
     font_name = "NotoSansAnatolianHieroglyphs-Regular"
