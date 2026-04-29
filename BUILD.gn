@@ -52,13 +52,16 @@ ohos_shared_headers("fonts_notofonts") {
   part_name = "notofonts"
 }
 
-ohos_copy("copy_preview_fonts_notofonts") {
-  sources = []
-  foreach(font, notofonts_fonts_list) {
-    sources += [ font.font_path ]
+preview_sources = []
+foreach(font, notofonts_fonts_list) {
+  if (font.alias_name == "") {
+    preview_sources += [ font.font_path ]
   }
-  outputs =
-      [ target_out_dir + "/previewer/common/bin/fonts/{{source_file_part}}" ]
+}
+
+ohos_copy("copy_preview_fonts_notofonts") {
+  sources = preview_sources
+  outputs = [ target_out_dir + "/previewer/common/bin/fonts/{{source_file_part}}" ]
   module_source_dir = target_out_dir + "/previewer/common/bin/"
   module_install_name = ""
   subsystem_name = "thirdparty"
@@ -66,14 +69,32 @@ ohos_copy("copy_preview_fonts_notofonts") {
 }
 
 ohos_copy("copy_preview_fonts_notofonts_ext") {
-  sources = []
-  foreach(font, notofonts_fonts_list) {
-    sources += [ font.font_path ]
-  }
-  outputs =
-      [ target_out_dir + "/previewer/resources/fonts/{{source_file_part}}" ]
+  sources = preview_sources
+  outputs = [ target_out_dir + "/previewer/resources/fonts/{{source_file_part}}" ]
   module_source_dir = target_out_dir + "/previewer/resources"
   module_install_name = ""
   subsystem_name = "thirdparty"
   part_name = "notofonts"
+}
+
+foreach(font, notofonts_fonts_list) {
+  if (font.alias_name != "") {
+    ohos_copy("copy_preview_alias_${font.font_name}") {
+      sources = [ font.font_path ]
+      outputs = [ target_out_dir + "/previewer/common/bin/fonts/${font.alias_name}" ]
+      module_source_dir = target_out_dir + "/previewer/common/bin/"
+      module_install_name = ""
+      subsystem_name = "thirdparty"
+      part_name = "notofonts"
+    }
+
+    ohos_copy("copy_preview_alias_ext_${font.font_name}") {
+      sources = [ font.font_path ]
+      outputs = [ target_out_dir + "/previewer/resources/fonts/${font.alias_name}" ]
+      module_source_dir = target_out_dir + "/previewer/resources"
+      module_install_name = ""
+      subsystem_name = "thirdparty"
+      part_name = "notofonts"
+    }
+  }
 }
